@@ -75,12 +75,7 @@ handleMenu(e){
 
   render() {
 
-    const ratio = window.innerWidth / 2;
 
-    const ctrans = ` transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(${ratio}px)` ;
-    const css = {
-     transform: ctrans
-    }
 
     return (
 
