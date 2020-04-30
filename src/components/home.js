@@ -83,7 +83,7 @@ handleMenu(e){
       <Layout>
         <article style={{overflow:this.state.overflow}} className={styles.gridItem}>
 
-          <section style={css} id="item"
+          <section id="item"
            style={{overflow:this.state.overflow}}
           className={styles.items}>
 
