@@ -1,3 +1,24 @@
+let contentfulConfig
+
+try {
+  // Load the Contentful config from the .contentful.json
+  contentfulConfig = require('./.contentful')
+} catch (_) {}
+
+// Overwrite the Contentful config with environment variables if they exist
+contentfulConfig = {
+  spaceId: "s8p26a84thqj",
+  accessToken: "UVcw8LXr_Khh8QVu0Al56KSBgItJWr3EjCkyeSC5sYE",
+}
+
+const { spaceId, accessToken } = contentfulConfig
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    'Contentful spaceId and the delivery token need to be provided.'
+  )
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -26,9 +47,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-contentful',
+      options: contentfulConfig,
+
+    },
   ],
 }
