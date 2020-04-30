@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
-import Home from '../components/Home.js'
+import Home from '../components/home.js'
 
 class MainPage extends Component {
   constructor() {
