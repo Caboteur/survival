@@ -182,7 +182,7 @@ img{
       transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
       -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
       -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
-  	background-color: #f0f0f0;
+  	background-color: #fcfcfc;
     width: 100%!important;
   }
 

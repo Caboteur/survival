@@ -14,13 +14,17 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+    query pMyQuery {
+    contentfulAsset {
+      id
+      title
+      description
+      file {
+        url
       }
     }
+  }
+
   `)
 
   return (

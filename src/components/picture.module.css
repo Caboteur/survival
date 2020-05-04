@@ -1,0 +1,19 @@
+.modal{
+  background: #ffffffd9;
+      z-index: 300;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+}
+
+.img{
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -7,8 +7,12 @@ import Colombia from "../images/colombia.svg"
 import Map from "../images/map.js"
 import data from "../data/data.json"
 import styles from "../components/home.module.css"
+import { observer } from 'mobx-react';
+import mobx from "mobx";
+import myStore from '../store/store.js'
 
-class SecondPage extends Component {
+@observer
+class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -29,7 +33,6 @@ class SecondPage extends Component {
 }else{
   this.setState({overflow:"hidden"})
 }
-
   }
 
 
@@ -59,6 +62,7 @@ handleClick(e){
 data.team.map((people)=>{
   if(people.id === e.target.id){
     this.setState({description:people.info})
+    myStore.changeExpo(people.id)
   }
  }
 )
@@ -94,6 +98,9 @@ handleMenu(e){
 
               <div  id="side4"><p className={styles.description}>{this.state.description}</p>
                 <button className={styles.begin} onClick={this.handleMenu.bind(this)}>back</button>
+                  <div className={styles.right}>
+                    <h1 className={styles.begin}><Link to="/page-2/"> Commencer l'exposition</Link></h1>
+                  </div>
               </div>
 
           </div> : 	<div className={styles.container}>
@@ -123,4 +130,4 @@ handleMenu(e){
   }
 }
 
-export default SecondPage;
+export default Home;

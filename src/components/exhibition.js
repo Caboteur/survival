@@ -1,9 +1,10 @@
 import React, {Component} from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import img1 from "../images/img1.jpg"
 import Colombia from "../images/colombia.svg"
+import Modal from "./picture.js"
 
 class SecondPage extends Component {
   constructor() {
@@ -14,7 +15,10 @@ class SecondPage extends Component {
       scrollLeft:"",
       overflow:"hidden",
       picture:6,
-      tab:[0, 1, 2, 3, 4, 5, 6 , 7 , 8 , 9 , 10 , 11 , 12]
+      tab:[0, 1, 2, 3, 4, 5, 6 , 7 , 8 , 9 , 10 , 11 , 12],
+      data:[],
+      display:"none",
+      src:"",
     }
   }
 
@@ -30,14 +34,15 @@ class SecondPage extends Component {
  this.setState({overflow:"scroll"})
 }else{console.log("desktop")
 
-
-
 }
-
+this.getData();
   }
 
-  handleMapClick(){
-    console.log("ok")
+  async getData(){
+    const datas = await  this.props.datas
+    await console.log(datas);
+    this.setState({data:datas})
+    await this.state.data.map((t)=>{console.log(t)})
   }
 
   handleDown(e){
@@ -62,6 +67,10 @@ class SecondPage extends Component {
   const walk = (x - this.state.startX) * 3;
   name.scrollLeft = this.state.scrollLeft - walk;
   }
+  modalClick(e){
+  this.setState({src:e.target.src})
+  this.state.display === "none"? this.setState({display:"inherit"}) : this.setState({display:"none"})
+  }
 
   render() {
     let z1 = -350;
@@ -73,6 +82,7 @@ class SecondPage extends Component {
 
     return (
       <Layout>
+         <Modal url={this.state.src} display={this.state.display} click={this.modalClick.bind(this)}/>
         <article className="grid-item main">
           <section id="item"
            style={{overflow:this.state.overflow}}
@@ -84,15 +94,17 @@ class SecondPage extends Component {
 
   <div className="D3Cube">
 
+      <div id="side3"> <p>Les wayus</p> </div>
+
       {
-        this.state.tab.map((side)=>{
+        this.state.data.map((side, index)=>{
 
           z1 = z1 + 700;
           z2 = z2 + 700;
           x1 = x1 + 700;
           x2 = x2 + 700;
 
-          if(side === 0 || side % 3 === 0 ){
+          if(index === 0 || index % 3 === 0 ){
 
 
             let ctrans = 'rotateY(90deg) translateX(0px) translateY(0px) translateZ('+z1+'px)';
@@ -111,9 +123,10 @@ class SecondPage extends Component {
             <>
             <div id="side4" style={css}> </div>
             <div id="side7" style={css2}>
-            <img className="exibitPicture" src={img1} ></img>
-            <p className="infoPicture">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+            <img className="exibitPicture" onClick={this.modalClick.bind(this)} src={side.node.photo.resize.src} ></img>
+            <p className="infoPicture">{side.node.info.info}</p>
              </div>
+
              <div id="side8" style={css3}>  </div>
             </>
           )
@@ -124,9 +137,9 @@ class SecondPage extends Component {
              transform: ctrans
             }
             return   (<div id="side9" style={css}>
-            <img className="exibitPicture" src={img1} />
+            <img className="exibitPicture" onClick={this.modalClick.bind(this)}src={side.node.photo.resize.src} />
             <div>
-            <p className="infoPicture">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+            <p className="infoPicture">{side.node.info.info}</p>
             </div>
             </div>)
           }
