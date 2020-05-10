@@ -14,21 +14,23 @@ class Intro extends Component {
 
   iterateAfter(){
 
-this.setState({display:"none"})
-    if (this.state.num < 6){
+
+    if (this.state.num < 5){
+      this.setState({display:"none"})
     console.log(this.state.num);
       this.setState({display:"inherit"})
     this.setState({num: this.state.num + 1});
 
-}else{
+}else if(this.state.num === 4){
     this.setState({displaybutton:"none"})
-  console.log(this.state.num);
+    this.setState({num:5})
   return
 }
   }
 
   iterateBack(){
     if (this.state.num !=0){
+        this.setState({displaybutton:"inline-block"})
       this.setState({display:"none"})
       this.setState({display:"inherit"})
     this.setState((prevState, { num }) => ({
@@ -61,19 +63,8 @@ this.setState({display:"none"})
     phénomène massif d’appropriation des terres.
     </p>
       )}
-    else if (this.state.num===2) {
 
-      return(
-      <p style={{display:this.state.display}} className={styles.textIntro}>
-    Chaque jour, les droits et les
-    territoires des communautés autochtones, paysannes ou afrodescendantes, démunies sur
-    le plan socio-économique et juridique, sont attaqués, fragilisés. Les écosystèmes de
-    Colombie, pays arrivant à la deuxième place du classement mondial de la biodiversité,
-    revêtent une importance capitale sur le plan climatique. Pourtant, ils perdent chaque
-    jour du terrain face à l’appétit des multinationales et des grands propriétaires terriens,
-    qui bénéficient au mieux du silence complice, au pire de l’appui du gouvernement.</p>
-  )}
-    else if(this.state.num===3){
+    else if(this.state.num===2){
       return(
       <p style={{display:this.state.display}} className={styles.textIntro}>
         Chaque jour, les droits et les
@@ -85,7 +76,7 @@ this.setState({display:"none"})
         qui bénéficient au mieux du silence complice, au pire de l’appui du gouvernement.</p>
       )
 
-  }else if (this.state.num===4) {
+  }else if (this.state.num===3) {
     return(
 
 
@@ -95,7 +86,7 @@ this.setState({display:"none"})
   )
 }
 
-    else if (this.state.num===5) {
+    else if (this.state.num===4) {
       return(
         <p  style={{display:this.state.display}} className={styles.textIntro}>
     En Colombie comme en de nombreux points du globe, les peuples autochtones luttent pour le respect de leurs droits et la sauvegarde de leurs milieux. Fortement mobilisés et conscients de la menace planétaire que constitue notre système actuel, ils sont porteurs de messages qui parlent d’un autre rapport au monde. D’un monde où la frontière entre humains, animaux et végétaux est infiniment plus perméable que la nôtre. D’un système de pensées et de comportements interconnectés, où chaque représentant du vivant joue un rôle primordial, que toutes les autres composantes se doivent de garder à l’esprit.
@@ -104,7 +95,7 @@ this.setState({display:"none"})
   )
   }
 
-    else if (this.state.num===6) {
+    else if (this.state.num===5) {
       return(
         <p  style={{display:this.state.display}} className={styles.textIntro}>
     Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.
