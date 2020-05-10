@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { Component } from "react"
 import { useEffect } from "react"
 import { Link } from "gatsby"
 import styles from './introExpo.module.css'
