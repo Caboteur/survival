@@ -10,6 +10,7 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@svgr/core": "^5.4.0",
     "babel-preset-gatsby": "^0.4.0",
+    "background-image-on-load": "^1.1.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",

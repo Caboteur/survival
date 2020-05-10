@@ -7,21 +7,23 @@ class Intro extends Component {
     super();
     this.state={
       num:0,
-      display:"inherit"
+      display:"inherit",
+      displaybutton:"inline-block",
     }
   }
 
   iterateAfter(){
 
 this.setState({display:"none"})
-    if (this.state.num < 7){
-
+    if (this.state.num < 6){
+    console.log(this.state.num);
       this.setState({display:"inherit"})
     this.setState({num: this.state.num + 1});
 
 }else{
+    this.setState({displaybutton:"none"})
   console.log(this.state.num);
-  this.setState({num:6})
+  return
 }
   }
 
@@ -60,7 +62,7 @@ this.setState({display:"none"})
     </p>
       )}
     else if (this.state.num===2) {
-      console.log(this.state.num);
+
       return(
       <p style={{display:this.state.display}} className={styles.textIntro}>
     Chaque jour, les droits et les
@@ -109,7 +111,15 @@ this.setState({display:"none"})
       </p>
 
     )
-    }
+  } else {
+    return(
+      <p  style={{display:this.state.display}} className={styles.textIntro}>
+  Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.
+    </p>
+
+  )
+
+  }
   }
     return(
     <div>
@@ -120,7 +130,7 @@ this.setState({display:"none"})
 
     <div>
     <button className={styles.buttonIntro} onClick={this.iterateBack.bind(this)}>Précédent</button>
-    <button className={styles.buttonIntro} onClick={this.iterateAfter.bind(this)}>Suivant</button>
+    <button style={{display:this.state.displaybutton}} className={styles.buttonIntro} onClick={this.iterateAfter.bind(this)}>Suivant</button>
     </div>
     </div>
   )
