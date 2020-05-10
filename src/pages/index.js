@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
-import IntroExpo from '../components/IntroExpo.js'
+import IntroExpo from '../components/introExpo.js'
 
 class ThirdPage extends Component {
 

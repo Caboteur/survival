@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { useEffect } from "react"
 import { Link } from "gatsby"
 import styles from './introExpo.module.css'
 import img1 from "../images/indigene.jpg"
