@@ -8,11 +8,9 @@ import img3 from "../images/depth.png"
 import title from '../images/title2.svg'
 import enterwebsite from '../images/enterwebsite.svg'
 
-function IntroExpo(props) {
-    useEffect(() => {
+class IntroExpo extends Component {
 
-})
-
+render() {
 
     return (
       <>
@@ -24,7 +22,7 @@ function IntroExpo(props) {
       </div>
       </>
     );
-
+  }
 }
 
 export default IntroExpo;
