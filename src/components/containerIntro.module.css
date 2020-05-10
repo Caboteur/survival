@@ -102,8 +102,8 @@
 
 .logo{
   position: absolute;
-    left: 0;
-    top: 0;
+  left: 14px;
+  top: 14px;
       width: 12rem;
 }
 

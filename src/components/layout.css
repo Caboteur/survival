@@ -275,13 +275,14 @@ animation-fill-mode: forwards;
 }
 
 .infoPicture{
-white-space: normal;
-width: 80%;
-margin: auto;
-display: block;
-margin-top: 34%;
-font-weight: 100;
-color: #416df7;
+  white-space: normal;
+  width: 70%;
+  margin: auto;
+  display: block;
+  margin-top: 34%;
+  font-weight: 100;
+  color: #4d73d2;
+  zoom: 1.2;
 }
 
 
@@ -295,7 +296,7 @@ color: #416df7;
 
 
 .container{
-  background: #f7f7f7
+  background: #dbdbdb;
 }
 
 .left{
@@ -314,7 +315,7 @@ color: #416df7;
 }
 
 .center{
-  background: #f4f4f4;
+  background: #e4e4e4;
     display: inline-block;
     height: 100vh;
     width: 10%;
@@ -322,7 +323,7 @@ color: #416df7;
 }
 
 #map{
-  width: 42%;
+  width: 38%;
     position: absolute;
     top: 14%;
     left: 7%;
@@ -341,4 +342,25 @@ color: #416df7;
   margin: auto;
     color: #4d72d1;
     display: table;
+}
+
+
+.iconMap{
+  width: 3em;
+  float: left;
+  margin-right: 20px;
+}
+
+.mapSvg{
+  max-width: 623px;
+}
+
+.pb{
+  font-family: 'Exo', sans-serif;
+  color: #FF214D;
+}
+
+.follow{
+  position: relative;
+    width: 12rem;
 }

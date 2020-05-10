@@ -6,20 +6,24 @@ class Intro extends Component {
   constructor() {
     super();
     this.state={
-      num:0,
+      num:1,
       display:"inherit"
     }
   }
 
   iterateAfter(){
+    console.log(this.state.num);
 this.setState({display:"none"})
-    if (this.state.num < 4){
+    if (this.state.num < 7){
 
       this.setState({display:"inherit"})
     this.setState((prevState, { num }) => ({
     num: prevState.num + 1
   }));
 
+}else{
+  console.log(this.state.num);
+  this.setState({num:6})
 }
   }
 
@@ -103,8 +107,6 @@ this.setState({display:"none"})
       return(
         <p  style={{display:this.state.display}} className={styles.textIntro}>
     Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.
-
-
       </p>
 
     )
