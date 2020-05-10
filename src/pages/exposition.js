@@ -55,8 +55,8 @@ allContentfulExpo {
         info
       }
       photo {
-        resize {
-          src
+        file {
+          url
         }
       }
     }

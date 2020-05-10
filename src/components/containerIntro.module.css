@@ -1,0 +1,117 @@
+.container{
+  background: #ffff;
+  animation-name: opacity;
+  animation-duration: 2s;
+  }
+
+  @keyframes opacity {
+    from{
+      opacity: 0.
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+@keyframes transform {
+  from{
+    transform: rotateY(-83deg);
+  }to{
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes width {
+  from{
+    transform: translateX(-62px);
+
+  }to{
+    transform: translateX(0px);
+
+  }
+}
+
+@keyframes rotate {
+  from{
+
+    transform: translateX(61px);
+  }to{
+
+    transform: translateX(0px);
+  }
+}
+
+
+.leftSide{
+  height: 100vh;
+    width: 71%;
+    background: #ffff;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-name: rotate;
+    animation-fill-mode: forwards;
+}
+
+.rightSide{
+  height: 71vh;
+    background: #e8e8e8;
+    width: 19%;
+    display: inline-block;
+    margin-bottom: 15vh;
+    overflow: auto;
+        overflow-x: hidden;
+    animation-duration: 1.5s;
+    animation-name: width;
+    animation-fill-mode: forwards;
+}
+
+.centerSide{
+  background: #f4f4f4;
+    display: inline-block;
+    height: 100vh;
+    width: 10%;
+    clip-path: polygon(0 0, 100% 14%, 100% 85%, 0% 100%);
+    animation-duration: 2s;
+    animation-name: transform;
+    animation-fill-mode: forwards;
+}
+
+#map{
+  width: 42%;
+    position: absolute;
+    top: 14%;
+    left: 7%;
+    right: 0;
+}
+
+.description{
+  font-family: 'Exo', sans-serif;
+  display: table;
+  padding: 17px;
+    color: #5176d2;
+        white-space: normal;
+}
+
+.begin{
+  text-decoration: none!important;
+  font-family: 'Megrim', cursive;
+  margin: auto;
+    color: #4d72d1;
+    display: table;
+}
+
+.logo{
+  position: absolute;
+    left: 0;
+    top: 0;
+      width: 12rem;
+}
+
+#containText{
+  width: 42%;
+position: absolute;
+top: 14%;
+left: 30%;
+bottom: 0;
+right: 0;
+}

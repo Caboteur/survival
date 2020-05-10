@@ -2,6 +2,13 @@
   margin: 0!important;
 }
 
+
+
+
+
+
+
+
 .grid-container {
   background: #efefef;
   font-family: 'Rubik', sans-serif;
@@ -80,13 +87,13 @@
     margin: 20px auto;
 }
 .D3Cube {
-    top: 0;
+    top: -57px;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
-    -moz-transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
-    -webkit-transform: rotateX(0deg) rotateY(-9deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(1deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(1deg) rotateZ(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(1deg) rotateZ(0deg);
     margin: auto;
     position: relative;
     -moz-transform-style: preserve-3d;

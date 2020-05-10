@@ -1,20 +1,17 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
-import Home from '../components/home.js'
+import IntroExpo from '../components/IntroExpo.js'
 
-class MainPage extends Component {
-  constructor() {
-    super();
-  }
+class ThirdPage extends Component {
 
   render() {
 
     return (
       <div>
-      <Home />
+      <IntroExpo />
       </div>
     );
   }
 }
 
-export default MainPage;
+export default ThirdPage;

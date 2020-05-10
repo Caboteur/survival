@@ -3,6 +3,7 @@ import React from "react";
 function Icon(props) {
   return (
     <svg
+      className={props.class}
       xmlns="http://www.w3.org/2000/svg"
       fillRule="evenodd"
       strokeLinejoin="round"
@@ -28,7 +29,7 @@ function Icon(props) {
       onClick={props.click}
      cx="87.535"
      cy="37.67"
-     fill="#D65454"
+     fill="#F73A60"
      rx="3.114"
      ry="3.027"
      transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -7.7 69.74)"
@@ -39,7 +40,7 @@ function Icon(props) {
    onClick={props.click}
     cx="87.535"
     cy="37.67"
-    fill="#086133"
+    fill="#5D4DE1"
     rx="3.114"
     ry="3.027"
     transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -14.728 280.608)"

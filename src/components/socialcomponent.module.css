@@ -1,0 +1,12 @@
+.logo{
+    width: 3%;
+    position: relative;
+    float: right;
+    margin: 15px;
+        margin-left: 0px;
+        margin-right: 25px;
+}
+
+.logo:hover{
+  width:3.2%;
+}

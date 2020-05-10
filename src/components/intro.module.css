@@ -1,0 +1,56 @@
+.textIntro{
+  white-space: normal;
+  font-family: 'Exo', sans-serif;
+  padding: 5%;
+  color: #4d72d1;
+  animation-duration: 2s;
+  animation-name : transition;
+animation-play-state: running;
+height: 300px
+}
+
+
+.buttonIntro{
+  margin: auto;
+    display: inline-block;
+    background: #4d72d1;
+    border: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 7px 8px 5px #4d72d147;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.buttonFollow{
+  margin: auto;
+    display: block;
+    background: #4d72d1;
+    border: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 7px 8px 5px #4d72d147;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.titleIntro{
+  white-space: normal;
+  font-family: 'Exo', sans-serif;
+  color: #4d72d1;
+  text-align: center;
+  font-size: 25px;
+  animation-duration: 2s;
+  animation-name : transition;
+animation-play-state: running;
+}
+
+@keyframes transition {
+  from {
+  opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

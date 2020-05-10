@@ -8,7 +8,6 @@ import styles from "../components/home.module.css"
 import { observer } from 'mobx-react';
 import mobx from "mobx";
 import myStore from '../store/store.js'
-import ContainerIntro from "./containerIntro.js"
 import title from '../images/title.svg'
 import colombia from '../images/clombia-intro.png'
 import Tooltip from "react-simple-tooltip"
@@ -132,7 +131,7 @@ render() {
           </div> :
 
            <>
-            {this.state.pass==="none"?
+
 
               <div className={styles.container}>
             <div className={styles.left}>
@@ -160,14 +159,12 @@ render() {
                   }
 
                   </div>
-
             </div>
             <LogoComponent />
-
           </div>
           <div className={styles.center}> </div>
           <div className={styles.right}>
-                  <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
+          <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
               <h1 className={styles.begin}>{this.state.title}</h1>
               <div>
                 <p className={styles.description}>{this.state.description}</p>
@@ -177,11 +174,7 @@ render() {
         </div>
         </div>
 
-      :
 
-      <ContainerIntro display={this.props.class} click={this.handleIntro.bind(this)}/>
-
-    }
 
       </>
 

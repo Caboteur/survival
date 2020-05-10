@@ -1,10 +1,12 @@
 import React, {Component} from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import styles from "./exhibition.module.css"
 import SEO from "../components/seo"
-import img1 from "../images/img1.jpg"
 import Colombia from "../images/colombia.svg"
 import Modal from "./picture.js"
+import { LadderLoading } from 'react-loadingg';
+import logoCarte from "../images/logoCarte.svg"
 
 class SecondPage extends Component {
   constructor() {
@@ -19,6 +21,7 @@ class SecondPage extends Component {
       data:[],
       display:"none",
       src:"",
+      load:"inherit"
     }
   }
 
@@ -71,17 +74,25 @@ this.getData();
   this.setState({src:e.target.src})
   this.state.display === "none"? this.setState({display:"inherit"}) : this.setState({display:"none"})
   }
+  handleload(){
+    this.setState({load:"none"})
+  }
 
   render() {
-    let z1 = -350;
-    let z2 = 350;
-    let x1 = 0;
-    let x2 = 0;
+    let z1 = -1050;
+    let z2 = -350;
+    let x1 = -700;
+    let x2 = -700;
 
 
 
     return (
       <Layout>
+          <Link to="/carte"><img src={logoCarte} className={styles.logocarte}/>  </Link>
+         <div  style={{display:this.state.load}} className={styles.loader}>
+          <LadderLoading stye={{zoom:1.3}} color="#416df7" size="large"></LadderLoading>
+        </div>
+
          <Modal url={this.state.src} display={this.state.display} click={this.modalClick.bind(this)}/>
         <article className="grid-item main">
           <section id="item"
@@ -94,7 +105,7 @@ this.getData();
 
   <div className="D3Cube">
 
-      <div id="side3"> <p>Les wayus</p> </div>
+
 
       {
         this.state.data.map((side, index)=>{
@@ -123,8 +134,11 @@ this.getData();
             <>
             <div id="side4" style={css}> </div>
             <div id="side7" style={css2}>
-            <img className="exibitPicture" onClick={this.modalClick.bind(this)} src={side.node.photo.resize.src} ></img>
-            <p className="infoPicture">{side.node.info.info}</p>
+            {side.node.photo?
+              <img className="exibitPicture" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+              :   <p className="infoPicture">{side.node.info.info}</p>
+
+            }
              </div>
 
              <div id="side8" style={css3}>  </div>
@@ -137,10 +151,14 @@ this.getData();
              transform: ctrans
             }
             return   (<div id="side9" style={css}>
-            <img className="exibitPicture" onClick={this.modalClick.bind(this)}src={side.node.photo.resize.src} />
-            <div>
-            <p className="infoPicture">{side.node.info.info}</p>
-            </div>
+
+            {side.node.photo?
+              <img className="exibitPicture" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)}src={side.node.photo.file.url} />
+
+              :   <div> <p className="infoPicture">{side.node.info.info}</p></div>
+
+            }
+
             </div>)
           }
         })

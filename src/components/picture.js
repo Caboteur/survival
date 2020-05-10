@@ -7,8 +7,7 @@ class Picture extends Component {
   render() {
 
     return (
-      <div style={{display:this.props.display}} onClick={this.props.click} className={styles.modal}>
-      <button onClick={this.props.click}>click click click </button>
+      <div style={{display:this.props.display}} onClick={this.props.click} className={styles.modal}>    
       <img className={styles.img} src={this.props.url} />
       </div>
     );
