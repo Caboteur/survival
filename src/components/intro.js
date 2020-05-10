@@ -6,20 +6,18 @@ class Intro extends Component {
   constructor() {
     super();
     this.state={
-      num:1,
+      num:0,
       display:"inherit"
     }
   }
 
   iterateAfter(){
-    console.log(this.state.num);
+
 this.setState({display:"none"})
     if (this.state.num < 7){
 
       this.setState({display:"inherit"})
-    this.setState((prevState, { num }) => ({
-    num: prevState.num + 1
-  }));
+    this.setState({num: this.state.num + 1});
 
 }else{
   console.log(this.state.num);
@@ -62,6 +60,7 @@ this.setState({display:"none"})
     </p>
       )}
     else if (this.state.num===2) {
+      console.log(this.state.num);
       return(
       <p style={{display:this.state.display}} className={styles.textIntro}>
     Chaque jour, les droits et les
