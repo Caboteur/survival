@@ -42,17 +42,20 @@ class Home extends Component {
 
   componentDidMount(){
     this.checkMobil();
-    if(isTablet){
-      alert('tablette')
-    }
+
   }
 
 
   checkMobil(){
-    if(isMobile){
+    if(isTablet){
+      this.setState({overflow:"hidden"})
+      console.log("taazs");
+      }
+    else if(isMobile){
       this.setState({mobile:true})
       this.setState({overflow:"auto"})
-    }else{
+    } 
+    else{
       this.setState({overflow:"hidden"})
     }
 
