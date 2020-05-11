@@ -18,6 +18,7 @@ import SocialComponent from "../components/socialcomponent.js"
 import follow from '../images/follow.svg'
 import next from '../images/next.svg'
 import back from '../images/back.svg'
+import {isMobile} from 'react-device-detect';
 
 @observer
 class Home extends Component {
@@ -40,16 +41,12 @@ class Home extends Component {
 
   componentDidMount(){
     this.checkMobil();
+    console.log(isMobile);
   }
 
 
   checkMobil(){
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)){
+    if(isMobile){
       this.setState({mobile:true})
       this.setState({overflow:"auto"})
     }else{

@@ -21,7 +21,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Luttes autochtones de colombie`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -43,9 +43,9 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#ffff`,
-        theme_color: `#663399`,
+        theme_color: `#ffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/iconsite.png`, // This path is relative to the root of the site.
       },
 
     },
