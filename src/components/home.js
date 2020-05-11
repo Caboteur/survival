@@ -9,12 +9,15 @@ import { observer } from 'mobx-react';
 import mobx from "mobx";
 import myStore from '../store/store.js'
 import ContainerIntro from "./containerIntro.js"
+import ContainerIntroMobile from "./containerIntroMobile.js"
 import title from '../images/title.svg'
 import colombia from '../images/clombia-intro.png'
 import Tooltip from "react-simple-tooltip"
 import LogoComponent from "../components/logocomponent.js"
 import SocialComponent from "../components/socialcomponent.js"
 import follow from '../images/follow.svg'
+import next from '../images/next.svg'
+import back from '../images/back.svg'
 
 @observer
 class Home extends Component {
@@ -29,18 +32,14 @@ class Home extends Component {
       description:data.team[0].info,
       title:data.team[0].id,
       icon:data.team[0].icon,
-      pass:"inherit"
+      pass:"inherit",
+      tel:"none"
     }
 
   }
 
   componentDidMount(){
     this.checkMobil();
-    if(this.state.mobile){
-      this.setState({overflow:"scroll"})
-    }else{
-      this.setState({overflow:"hidden"})
-    }
   }
 
 
@@ -48,13 +47,13 @@ class Home extends Component {
     if( navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
     || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
     || navigator.userAgent.match(/iPod/i)
     || navigator.userAgent.match(/BlackBerry/i)
     || navigator.userAgent.match(/Windows Phone/i)){
       this.setState({mobile:true})
+      this.setState({overflow:"auto"})
     }else{
-      this.setState({mobile:false})
+      this.setState({overflow:"hidden"})
     }
 
   }
@@ -62,11 +61,7 @@ class Home extends Component {
 
   handleClick(e){
     this.setState({color:"#5D4DE1"})
-    if(this.state.mobile){
-      const anim = document.getElementById("D3Cube");
-      anim.classList.remove("reverse");
-      anim.classList.add("rotation");
-    }
+
 
     const ellipse = document.getElementsByTagName("ellipse");
     const point = e.target.id;
@@ -86,13 +81,13 @@ class Home extends Component {
 
 }
 
-handleMenu(e){
+handleNext(){
   if(this.state.mobile){
-    const anim = document.getElementById("D3Cube");
-    anim.classList.remove("rotation");
-    anim.classList.add("reverse");
+    if(this.state.tel==="inherit"){this.setState({tel:"none"})}
+    else{this.setState({tel:"inherit"})}
   }
 }
+
 
 handleIntro(){
   this.setState({pass:"none"})
@@ -116,20 +111,53 @@ render() {
           className={styles.items}>
 
           {this.state.mobile ?
-            <div id="D3Cube" className={styles.D3Cube}>
-              <div id="side3">
-                <Map click={this.handleClick.bind(this)}/>
+            <>
+            {this.state.pass==="none"?
+              <>
+              <img className={styles.logo} src={title} />
+              <SocialComponent />
+            <div >
+
+
+              <div className={styles.mobileMap} >
+
+                <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
+
+                <div className={styles.pbMobileContainer}>
+                <h1 className={styles.pbMobile}>Problématiques</h1>
+                {
+                  this.state.icon.map((icon)=>{
+
+                    return(
+                       <Tooltip
+                         style={{display:"block",float: "left", background:"#ffff"}}
+                         content={icon.title}>
+                      <img className={styles.iconMap} src={icon.url} />
+                      </Tooltip>
+                    )
+                  })
+                }
+
+                </div>
+                <img className={styles.next} src={next} onClick={this.handleNext.bind(this)}/>
               </div>
 
-              <div  id="side4"><p className={styles.description}>{this.state.description}</p>
-              <h1 className={styles.begin}>{this.state.title}</h1>
-              <button className={styles.begin} onClick={this.handleMenu.bind(this)}>back</button>
-              <div className={styles.right}>
-                <h1 className={styles.begin}><Link to="/exposition/"> Commencer l'exposition</Link></h1>
-              </div>
+              <div className={styles.infoMobile} style={{display:this.state.tel}}>
+                <h1 className={styles.begin}>{this.state.title}</h1>
+                <p className={styles.description}>{this.state.description}</p>
+                  <img className={styles.follow} src={back} onClick={this.handleNext.bind(this)}/>
+                <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
+
             </div>
 
-          </div> :
+          </div>
+          </> :
+          <ContainerIntroMobile display={this.props.class} click={this.handleIntro.bind(this)}/>
+          }
+
+        </>
+
+          :
 
            <>
             {this.state.pass==="none"?

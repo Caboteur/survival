@@ -47,7 +47,6 @@
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
-    overflow: hidden;
     height: 100vh;
     perspective: 5472px;
     -webkit-perspective: 5472px;
@@ -174,8 +173,20 @@ img{
     top: 20%;
 }
 
+.logo{
+  position: absolute;
+  left: 14px;
+  top: 14px;
+      width: 12rem;
+}
+
 @media only screen and (max-width : 920px)
+
 {
+  .mapSvg{
+    margin-top: 20%;
+    max-width: 526px;
+}
   #side3 {
       transform: translateX(0px) translateY(0px) translateZ(50vw);
       -moz-transform: translateX(0px) translateY(0px) translateZ(50vw);
@@ -184,9 +195,9 @@ img{
     width: 100%!important;
   }
   #side4 {
-      transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
-      -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
-      -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
+      transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(65vw);
+      -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(65vw);
+      -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(65vw);
   	background-color: #fcfcfc;
     width: 100%!important;
   }
@@ -270,6 +281,15 @@ animation-fill-mode: forwards;
     top: 8rem;
   }
 
+  .logo{
+    position: absolute;
+    left: 27px;
+    top: 25px;
+    width: 7rem;
+    z-index: 800;
+    transform: translateZ(220px);
+  }
+
 }
 
 .infoPicture{
@@ -282,12 +302,7 @@ font-weight: 100;
 color: #416df7;
 }
 
-.logo{
-  position: absolute;
-  left: 14px;
-  top: 14px;
-      width: 12rem;
-}
+
 
 
 
@@ -452,4 +467,59 @@ a:-webkit-any-link{
 .follow{
   position: relative;
     width: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile*/
+
+.mobileMap{
+  display: inherit;
+position: absolute;
+height: 100vh;
+width: 100%;
+background: white;
+margin-top: 35%;
+}
+
+.pbMobile{
+  position: relative;
+display: block;
+width: 80%;
+font-family: 'Exo', sans-serif;
+color: #FF214D;
+margin-bottom: 10px;
+}
+
+.pbMobileContainer{
+  width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.next{
+  width: 11rem;
+    display: block;
+    margin: auto;
+    padding: re;
+    position: relative;
+    top: 6%;
+}
+
+.infoMobile{
+  display: inherit;
+    position: absolute;
+    width: 100%;
+    background: white;
+    min-height: 100vh;
+        margin-top: 35%;
 }
