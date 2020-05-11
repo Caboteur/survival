@@ -19,6 +19,7 @@ import follow from '../images/follow.svg'
 import next from '../images/next.svg'
 import back from '../images/back.svg'
 import {isMobile} from 'react-device-detect';
+import {isTablet} from 'react-device-detect';
 
 @observer
 class Home extends Component {
@@ -41,7 +42,9 @@ class Home extends Component {
 
   componentDidMount(){
     this.checkMobil();
-    console.log(isMobile);
+    if(isTablet){
+      alert('tablette')
+    }
   }
 
 
