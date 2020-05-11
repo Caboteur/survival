@@ -37,9 +37,10 @@ background-position: center;
 
 
 @media only screen and (max-width : 920px)
-{.title{
+{
+  .title{
   position: absolute;
-      width: 89%;
+        width: 20rem;
       margin-left: 20px;
       text-decoration: none;
       color: black;

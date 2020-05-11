@@ -523,3 +523,9 @@ margin-bottom: 10px;
     min-height: 100vh;
         margin-top: 35%;
 }
+
+
+.followMobile{
+  position: relative;
+    width: 150px;
+}
