@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
 import styles from "../components/containerIntroMobile.module.css"
-import title from '../images/titleP.png'
+import title from '../images/title.jpg'
 import next from '../images/next.svg'
 import Intro from "./intro.js"
 import LogoComponent from "../components/logocomponent.js"
