@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
 import IntroExpo from '../components/introExpo.js'
-import Seo from '../components/Seo.js'
+import { Helmet } from "react-helmet"
 
 class ThirdPage extends Component {
 
@@ -10,20 +10,12 @@ class ThirdPage extends Component {
     return (
 
       <div>
-      <Seo
-      title="Home"
-      description="Description of the site/home page."
-      pagePath="/"
-      schema={`{
-            "@context": "http://schema.org",
-            "@type": "WebPage",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Example Company",
-              "image": "/iconsite.png"
-            }
-          }`}
-    />
+          <Helmet>
+               <meta charSet="utf-8"  />
+               <title>Luttes autochtones de colombie</title>
+               <link rel="canonical" href="http://mysite.com/example" />
+               <meta name="description" content="Exposition photo sur les luttes des peuples autochtones en Colombie." />
+           </Helmet>
       <IntroExpo />
       </div>
 
