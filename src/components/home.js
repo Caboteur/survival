@@ -56,7 +56,6 @@ class Home extends Component {
     else{
       this.setState({overflow:"hidden"})
     }
-
   }
 
 

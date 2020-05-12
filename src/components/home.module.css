@@ -488,7 +488,7 @@ position: absolute;
 height: 100vh;
 width: 100%;
 background: white;
-margin-top: 35%;
+margin-top: 1rem;
 }
 
 .pbMobile{
@@ -507,12 +507,10 @@ margin-bottom: 10px;
 }
 
 .next{
-  width: 11rem;
-    display: block;
-    margin: auto;
-    padding: re;
-    position: relative;
-    top: 6%;
+  display: block;
+margin: auto;
+top: 6%;
+width: 9rem;
 }
 
 .infoMobile{
@@ -528,4 +526,5 @@ margin-bottom: 10px;
 .followMobile{
   position: relative;
     width: 150px;
+        margin-bottom: 2rem;
 }

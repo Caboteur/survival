@@ -7,10 +7,6 @@ import Intro from "./intro.js"
 import SocialComponent from "../components/socialcomponent.js"
 
 class ContainerIntro extends Component {
-  constructor() {
-    super();
-  }
-
 
 render() {
 

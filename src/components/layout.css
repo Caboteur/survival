@@ -216,6 +216,7 @@ img{
   .D3Cube{transform: rotateX(-8deg) rotateY(-1deg) ;
         -moz-transform: rotateX(-8deg) rotateY(-1deg) ;
         -webkit-transform: rotateX(-8deg) rotateY(-1deg) ;
+        top:-10%;
   }
 
   .rotation {

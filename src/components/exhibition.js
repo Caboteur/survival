@@ -7,6 +7,8 @@ import Colombia from "../images/colombia.svg"
 import Modal from "./picture.js"
 import { LadderLoading } from 'react-loadingg';
 import logoCarte from "../images/logoCarte.svg"
+import {isMobile} from 'react-device-detect';
+import {isTablet} from 'react-device-detect';
 
 class SecondPage extends Component {
   constructor() {
@@ -26,6 +28,7 @@ class SecondPage extends Component {
   }
 
   componentDidMount(){
+
     if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/iPhone/i)
@@ -79,7 +82,17 @@ this.getData();
   }
 
   render() {
-    let z1 = -1050;
+    const height = window.innerHeight
+    const width= window.innerWidth
+    const calc = height - width;
+    let z1;
+    if (calc >= 0 ){
+     z1 = -1050;
+    }
+    else{
+      z1 = -1050;
+    }
+
     let z2 = -350;
     let x1 = -700;
     let x2 = -700;
