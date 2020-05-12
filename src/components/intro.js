@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Typist from 'react-typist';
 import styles from './intro.module.css'
+import SocialComponent from './logocomponent.js'
 
 class Intro extends Component {
   constructor() {
@@ -40,7 +41,13 @@ class Intro extends Component {
   }
 
   render() {
-    const getText= ()=>{  if(this.state.num===0){
+    const getText= ()=>{
+      if(this.state.num===0){
+        return(
+          <SocialComponent />
+        )
+      }
+      else if(this.state.num===1){
       return (
       <p  style={{display:this.state.display}} className={styles.textIntro}>
       Berceau d’une diversité biologique, ethnique et culturelle époustouflante,
@@ -52,7 +59,7 @@ class Intro extends Component {
     conflit ayant généré le plus grand nombre de déplacements internes au monde
     (plus de 7 millions de personnes), le pays tente d’imaginer d’autres manières
     de vivre ensemble, en réintégrant les anciens guérilleros à la société.</p>
-  )}else if (this.state.num===1) {
+  )}else if (this.state.num===2) {
     return(
     <p style={{display:this.state.display}} className={styles.textIntro}>
     Malheureusement, les termes de cet accord inédit n’étant
@@ -64,7 +71,7 @@ class Intro extends Component {
     </p>
       )}
 
-    else if(this.state.num===2){
+    else if(this.state.num===3){
       return(
       <p style={{display:this.state.display}} className={styles.textIntro}>
         Chaque jour, les droits et les
@@ -76,7 +83,7 @@ class Intro extends Component {
         qui bénéficient au mieux du silence complice, au pire de l’appui du gouvernement.</p>
       )
 
-  }else if (this.state.num===3) {
+  }else if (this.state.num===4) {
     return(
 
 
@@ -86,7 +93,7 @@ class Intro extends Component {
   )
 }
 
-    else if (this.state.num===4) {
+    else if (this.state.num===5) {
       return(
         <p  style={{display:this.state.display}} className={styles.textIntro}>
     En Colombie comme en de nombreux points du globe, les peuples autochtones luttent pour le respect de leurs droits et la sauvegarde de leurs milieux. Fortement mobilisés et conscients de la menace planétaire que constitue notre système actuel, ils sont porteurs de messages qui parlent d’un autre rapport au monde. D’un monde où la frontière entre humains, animaux et végétaux est infiniment plus perméable que la nôtre. D’un système de pensées et de comportements interconnectés, où chaque représentant du vivant joue un rôle primordial, que toutes les autres composantes se doivent de garder à l’esprit.
@@ -95,7 +102,7 @@ class Intro extends Component {
   )
   }
 
-    else if (this.state.num===5) {
+    else if (this.state.num===6) {
       return(
         <p  style={{display:this.state.display}} className={styles.textIntro}>
     Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.

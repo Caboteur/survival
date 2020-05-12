@@ -3,7 +3,7 @@ import facebook from '../images/socialmedia/facebook.svg'
 import insta from '../images/socialmedia/instagram.svg'
 import styles from './socialcomponent.module.css'
 
-function SocialComponent () {
+const SocialComponent = () => {
 
 return(
   <div>

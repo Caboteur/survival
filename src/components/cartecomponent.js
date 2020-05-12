@@ -13,7 +13,6 @@ import ContainerIntroMobile from "./containerIntroMobile.js"
 import title from '../images/title.svg'
 import colombia from '../images/clombia-intro.png'
 import Tooltip from "react-simple-tooltip"
-import LogoComponent from "../components/logocomponent.js"
 import SocialComponent from "../components/socialcomponent.js"
 import follow from '../images/follow.svg'
 import next from '../images/next.svg'
@@ -185,7 +184,7 @@ render() {
                   </div>
 
             </div>
-            <LogoComponent />
+
 
           </div>
           <div className={styles.center}> </div>

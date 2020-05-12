@@ -4,7 +4,6 @@ import styles from "../components/containerIntro.module.css"
 import title from '../images/title.svg'
 import next from '../images/next.svg'
 import Intro from "./intro.js"
-import LogoComponent from "../components/logocomponent.js"
 import SocialComponent from "../components/socialcomponent.js"
 
 class ContainerIntro extends Component {
@@ -28,7 +27,7 @@ render() {
                 <Intro  />
 
                 </div>
-                  <LogoComponent />
+
           </div>
           <div className={styles.centerSide}> </div>
           <div className={styles.rightSide}>

@@ -13,6 +13,7 @@ class ThirdPage extends Component {
           <Helmet>
                <meta charSet="utf-8"  />
                <title>Luttes autochtones de colombie</title>
+               <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
                <link rel="canonical" href="http://mysite.com/example" />
                <meta name="description" content="Exposition photo sur les luttes des peuples autochtones en Colombie." />
            </Helmet>

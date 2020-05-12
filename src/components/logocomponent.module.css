@@ -3,12 +3,17 @@
 
 .logo{
   display: inline-block;
-    width: 3rem;
+    width: 6rem;
+    margin-left: 10px;
+}
+
+.igapo{
+  width: 3.7rem;
+  display: inline-block;
     margin-left: 10px;
 }
 
 .text{
-      display: inline-block;
   font-family: 'Exo', sans-serif;
   color: #4d72d1;
     font-size: 12px;
@@ -16,8 +21,5 @@
 
 
 .container{
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    display: none;
+  position: relative;
 }
