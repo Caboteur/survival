@@ -17,6 +17,8 @@ import SocialComponent from "../components/socialcomponent.js"
 import follow from '../images/follow.svg'
 import next from '../images/next.svg'
 import back from '../images/back.svg'
+import {isMobile} from 'react-device-detect';
+import {isTablet} from 'react-device-detect';
 
 @observer
 class Carte extends Component {
@@ -43,18 +45,17 @@ class Carte extends Component {
 
 
   checkMobil(){
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)){
+    if(isTablet){
+      this.setState({overflow:"hidden"})
+      }
+    else if(isMobile){
       this.setState({mobile:true})
       this.setState({overflow:"auto"})
-    }else{
+    }
+    else{
       this.setState({overflow:"hidden"})
     }
-
+    
   }
 
 

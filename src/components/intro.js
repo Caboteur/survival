@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Typist from 'react-typist';
 import styles from './intro.module.css'
-import SocialComponent from './logocomponent.js'
+import LogoComponent from './logocomponent.js'
 
 class Intro extends Component {
   constructor() {
@@ -44,7 +44,9 @@ class Intro extends Component {
     const getText= ()=>{
       if(this.state.num===0){
         return(
-          <SocialComponent />
+          <div className={styles.textIntro}>
+          <LogoComponent />
+          </div>
         )
       }
       else if(this.state.num===1){

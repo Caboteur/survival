@@ -13,7 +13,6 @@ import ContainerIntroMobile from "./containerIntroMobile.js"
 import title from '../images/title.svg'
 import colombia from '../images/clombia-intro.png'
 import Tooltip from "react-simple-tooltip"
-import LogoComponent from "../components/logocomponent.js"
 import SocialComponent from "../components/socialcomponent.js"
 import follow from '../images/follow.svg'
 import next from '../images/next.svg'
@@ -49,12 +48,11 @@ class Home extends Component {
   checkMobil(){
     if(isTablet){
       this.setState({overflow:"hidden"})
-      console.log("taazs");
       }
     else if(isMobile){
       this.setState({mobile:true})
       this.setState({overflow:"auto"})
-    } 
+    }
     else{
       this.setState({overflow:"hidden"})
     }
@@ -193,7 +191,7 @@ render() {
                   </div>
 
             </div>
-            <LogoComponent />
+
 
           </div>
           <div className={styles.center}> </div>

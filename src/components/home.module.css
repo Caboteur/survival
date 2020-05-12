@@ -467,6 +467,7 @@ a:-webkit-any-link{
 .follow{
   position: relative;
     width: 12rem;
+    margin-top: 10px;
 }
 
 

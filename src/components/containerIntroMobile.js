@@ -4,7 +4,6 @@ import styles from "../components/containerIntroMobile.module.css"
 import title from '../images/title.svg'
 import next from '../images/next.svg'
 import Intro from "./intro.js"
-import LogoComponent from "../components/logocomponent.js"
 import SocialComponent from "../components/socialcomponent.js"
 
 class ContainerIntroMobile extends Component {
