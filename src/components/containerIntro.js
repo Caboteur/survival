@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
 import styles from "../components/containerIntro.module.css"
-import title from '../images/titleP.png'
+import title from '../images/title.svg'
 import next from '../images/next.svg'
 import Intro from "./intro.js"
 import SocialComponent from "../components/socialcomponent.js"

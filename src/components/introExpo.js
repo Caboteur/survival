@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import styles from './introExpo.module.css'
 import img1 from "../images/indigene.jpg"
-import title from '../images/title2.svg'
+import title from '../images/titleP.png'
 import enterwebsite from '../images/enterwebsite.svg'
 import { LadderLoading } from 'react-loadingg';
 
