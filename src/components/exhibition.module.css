@@ -7,7 +7,7 @@
 }
 
 .logocarte{
-  width: 9%;
+  width: 7rem;
 display: block;
 position: absolute;
 top: 10px;
@@ -23,7 +23,8 @@ right: 50%;
     position: absolute;
     top: 10px;
     z-index: 800;
-    left: -14%;
+    left: -6%;
     right: 50%;
 }
+
 }
