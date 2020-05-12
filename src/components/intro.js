@@ -16,13 +16,13 @@ class Intro extends Component {
   iterateAfter(){
 
 
-    if (this.state.num < 5){
+    if (this.state.num < 6){
       this.setState({display:"none"})
     console.log(this.state.num);
       this.setState({display:"inherit"})
     this.setState({num: this.state.num + 1});
 
-}else if(this.state.num === 4){
+}else if(this.state.num === 5){
     this.setState({displaybutton:"none"})
     this.setState({num:5})
   return
@@ -51,7 +51,7 @@ class Intro extends Component {
       }
       else if(this.state.num===1){
       return (
-      <p  style={{display:this.state.display}} className={styles.textIntro}>
+      <p   className={styles.textIntro}>
       Berceau d’une diversité biologique, ethnique et culturelle époustouflante,
       la Colombie dispose de très nombreux atouts pour écrire les prochaines
       pages de son histoire.
@@ -63,14 +63,14 @@ class Intro extends Component {
     de vivre ensemble, en réintégrant les anciens guérilleros à la société.</p>
   )}else if (this.state.num===2) {
     return(
-    <p style={{display:this.state.display}} className={styles.textIntro}>
+    <div className={styles.textIntro}>
     Malheureusement, les termes de cet accord inédit n’étant
     guère respectés par le gouvernement actuel, les zones de conflits
     impliquant différentes factions armées se sont multipliées. Des réseaux
     étroitement imbriqués mêlent à ces menaces narcotrafic, extension de la
     frontière agro-industrielle, déforestation et orpaillage, donnant lieu à un
     phénomène massif d’appropriation des terres.
-    </p>
+    </div>
       )}
 
     else if(this.state.num===3){
@@ -89,15 +89,15 @@ class Intro extends Component {
     return(
 
 
-    <p  style={{display:this.state.display}} className={styles.textIntro}>
+    <div  className={styles.textIntro}>
     Le pays compte 102 peuples autochtones, dont 70 classés en danger « d’extinction physique et culturelle ». Ces peuples, les plus affectés par la violence et les inégalités, subissent déplacements forcés, menaces, recrutements sous la contrainte par des groupes armés, agressions et spoliations. Leurs leaders sont assassinés à un rythme effroyable, ce qui contribue encore à fragiliser les cultures amérindiennes du pays et, de ce fait, les richesses naturelles qu’elles défendent depuis des siècles. En 2019, en Colombie, un·e défenseur·euse des droits humains était assassiné·e tous les 2 jours, et les leaders autochtones constituent une grande partie de ces victimes.
-  </p>
+  </div>
   )
 }
 
     else if (this.state.num===5) {
       return(
-        <p  style={{display:this.state.display}} className={styles.textIntro}>
+        <p className={styles.textIntro}>
     En Colombie comme en de nombreux points du globe, les peuples autochtones luttent pour le respect de leurs droits et la sauvegarde de leurs milieux. Fortement mobilisés et conscients de la menace planétaire que constitue notre système actuel, ils sont porteurs de messages qui parlent d’un autre rapport au monde. D’un monde où la frontière entre humains, animaux et végétaux est infiniment plus perméable que la nôtre. D’un système de pensées et de comportements interconnectés, où chaque représentant du vivant joue un rôle primordial, que toutes les autres composantes se doivent de garder à l’esprit.
     </p>
 
@@ -106,14 +106,14 @@ class Intro extends Component {
 
     else if (this.state.num===6) {
       return(
-        <p  style={{display:this.state.display}} className={styles.textIntro}>
+        <div  className={styles.textIntro}>
     Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.
-      </p>
+      </div>
 
     )
   } else {
     return(
-      <p  style={{display:this.state.display}} className={styles.textIntro}>
+      <p  className={styles.textIntro}>
   Aux côtés de représentants autochtones, trois organisations, qui souhaitent contribuer à diffuser les messages de ces peuples et à défendre leurs droits, ont décidé de s’unir pour leur donner de la visibilité de l’autre côté de l’Atlantique. Cette exposition virtuelle permet de partir à la rencontre de différents peuples colombiens, confrontés à diverses problématiques socio-environnementales. Elle donne à voir, à travers eux, des manières uniques d’habiter ce monde, comme autant de fronts de résistance.
     </p>
 
