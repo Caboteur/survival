@@ -55,7 +55,7 @@ class Carte extends Component {
     else{
       this.setState({overflow:"hidden"})
     }
-    
+
   }
 
 
@@ -112,7 +112,7 @@ render() {
 
           {this.state.mobile ?
             <>
-              <img className={styles.logo} src={title} />
+              <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
               <SocialComponent />
             <div >
 
@@ -160,7 +160,7 @@ render() {
               <div className={styles.container}>
             <div className={styles.left}>
 
-              <img className={styles.logo} src={title} />
+              <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
               <SocialComponent />
 
               <div id="map">

@@ -18,7 +18,7 @@ render() {
           <div style={{display:this.props.display}} className={styles.container}>
             <div className={styles.leftSide}>
               <SocialComponent />
-              <img className={styles.logo} src={title} />
+                <Link to="/introduction/"><img className={styles.logo} src={title} /></Link>
               <div id={styles.containText}>
                 <Intro  />
 

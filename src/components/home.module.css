@@ -312,7 +312,7 @@ color: #416df7;
 
 
 .container{
-  background: #dbdbdb;
+  background: #f6f6f6;
 }
 
 @keyframes opaq {
@@ -403,7 +403,21 @@ width: 38%;
         white-space: normal;
 }
 
-.begin{
+
+@media only screen and (max-width : 920px) {
+ .begin {
+  text-decoration: none!important;
+  font-family: 'Megrim', cursive;
+  margin: auto;
+    color: #4d72d1;
+    display: table;
+    margin-top: 35%;
+}
+}
+
+.begin
+{
+  text-align: center;
   text-decoration: none!important;
   font-family: 'Megrim', cursive;
   margin: auto;
@@ -519,7 +533,7 @@ width: 9rem;
     width: 100%;
     background: white;
     min-height: 100vh;
-        margin-top: 35%;
+
 }
 
 

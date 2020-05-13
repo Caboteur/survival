@@ -10,9 +10,11 @@ return(
   <div className={styles.container}>
   <div>
   <p className={styles.text}>Une exposition proposée par</p>
+  <div style={{width: "76%", display: "block", margin: "auto"}}>
   <img className={styles.logo} src={survival}></img>
   <img className={styles.logo} src={humanConnect}></img>
   <img className={styles.igapo} src={igapo}></img>
+  </div>
   </div>
   </div>
 )

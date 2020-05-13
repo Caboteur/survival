@@ -319,7 +319,7 @@ animation-fill-mode: forwards;
 }
 
 #map{
-  width: 38%;
+  width: 50%;
     position: absolute;
     top: 14%;
     left: 7%;
@@ -359,4 +359,8 @@ animation-fill-mode: forwards;
 .follow{
   position: relative;
     width: 12rem;
+}
+
+.read-more-button{
+  color: #ff2a52;
 }

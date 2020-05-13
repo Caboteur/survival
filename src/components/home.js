@@ -114,7 +114,7 @@ render() {
             <>
             {this.state.pass==="none"?
               <>
-              <img className={styles.logo} src={title} />
+                <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
               <SocialComponent />
             <div >
 
@@ -165,7 +165,7 @@ render() {
               <div className={styles.container}>
             <div className={styles.left}>
 
-              <img className={styles.logo} src={title} />
+                <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
               <SocialComponent />
 
               <div id="map">
