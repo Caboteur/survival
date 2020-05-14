@@ -131,6 +131,98 @@ function Icon(props) {
         ry="3.027"
         transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -57.577 116.818)"
       ></ellipse>
+      <path
+          fill="none"
+          stroke="#FD264F"
+          strokeWidth="1.08"
+          d="M68.71 95.065l-39.189 63.784"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.89759 .88519 -.87033 2.84896 121.409 52.93)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#FD264F"
+          strokeWidth="1.16"
+          d="M68.71 95.065l-39.696 64.877"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.49267 1.1712 -1.21792 2.59209 414.919 -65.571)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#FD264F"
+          strokeWidth="1.88"
+          d="M58.239-841.643L28.859 159.699"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(-2.21026 -1.03851 .0372 -.07916 307.47 210.389)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#FD264F"
+          strokeWidth="1.69"
+          d="M69.486 91.822l13.885 61.209"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(-.07709 1.97191 -1.87328 -.07323 426.12 190.255)"
+        ></path>
+        <text
+          x="16.701"
+          y="169.299"
+          fill="#FD264F"
+          fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
+          fontSize="12"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(-29.17 11.172) scale(3.25089)"
+        >
+          Cali
+        </text>
+        <text
+          x="16.701"
+          y="169.299"
+          fill="#FD264F"
+          fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
+          fontSize="12"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(-37.145 -199.851) scale(3.25089)"
+        >
+          Meddelin
+        </text>
+        <text
+          x="16.701"
+          y="169.299"
+          fill="#FD264F"
+          fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
+          fontSize="12"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(425.603 -287.119) scale(3.25089)"
+        >
+          Bogota
+        </text>
+        <text
+          x="16.701"
+          y="169.299"
+          fill="#FD264F"
+          fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
+          fontSize="12"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(-31.25 -328.263) scale(3.25089)"
+        >
+          Car
+          <tspan x="28.753" y="169.299">
+            t
+          </tspan>
+          agène
+        </text>
+        <path
+          fill="#FD264F"
+          d="M86.321 92.56l2.14 3.228H84.18l2.141-3.228z"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(-1.84977 -2.34945 2.55424 -2.01101 209.504 777.18)"
+        ></path>
+        <path
+          fill="#FD264F"
+          d="M86.321 92.56l2.14 3.228H84.18l2.141-3.228z"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) rotate(47.099 173.567 298.317) scale(3.25089)"
+        ></path>
+        <path
+          fill="#FD264F"
+          d="M86.321 92.56l2.14 3.228H84.18l2.141-3.228z"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) rotate(78.938 256.146 294.009) scale(3.25089)"
+        ></path>
+        <path
+          fill="#FD264F"
+          d="M86.321 92.56l2.14 3.228H84.18l2.141-3.228z"
+          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(1.31829 3.10744 -3.09098 1.31131 429.273 -224.722)"
+        ></path>
     </svg>
   );
 }

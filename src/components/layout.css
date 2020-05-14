@@ -188,7 +188,6 @@ img{
       -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
       -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(50vw);
   	background-color: #f0f0f0;
-    width: 100%!important;
   }
 
   .D3Cube {
@@ -362,5 +361,5 @@ animation-fill-mode: forwards;
 }
 
 .read-more-button{
-  color: #ff2a52;
+  color: black;
 }

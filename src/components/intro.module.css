@@ -6,9 +6,10 @@
   animation-duration: 2s;
   animation-name : transition;
 animation-play-state: running;
-height: 250px;
-overflow: auto;
-white-space: pre-line;
+height: 360px;
+    overflow: auto;
+    white-space: pre-line;
+    margin-top: 20px;
 }
 
 
@@ -45,6 +46,7 @@ white-space: pre-line;
   animation-duration: 2s;
   animation-name : transition;
 animation-play-state: running;
+    font-family: 'Megrim', cursive;
 }
 
 @keyframes transition {
@@ -76,4 +78,12 @@ animation-play-state: running;
   background-color: var(--thumbBG) ;
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
+}
+
+
+@media only screen and (max-width : 920px)
+{
+  .textIntro{
+height: 304px;
+ }
 }

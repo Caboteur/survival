@@ -5,6 +5,7 @@
     margin: 15px;
         margin-left: 0px;
         margin-right: 25px;
+        z-index: 800;
 }
 
 .logo:hover{

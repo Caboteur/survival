@@ -183,8 +183,9 @@ img{
 
 {
   .mapSvg{
-    margin-top: 20%;
+  margin-top: 34%;
     max-width: 526px;
+      margin-left: 20px;
 }
   #side3 {
       transform: translateX(0px) translateY(0px) translateZ(50vw);
@@ -518,13 +519,15 @@ margin-bottom: 10px;
   width: 80%;
     margin: auto;
     margin-top: 30px;
+    height: 8rem;
 }
 
 .next{
   display: block;
 margin: auto;
-top: 6%;
-width: 9rem;
+width: 7rem;
+    top: 30px;
+    position: relative;
 }
 
 .infoMobile{
@@ -533,7 +536,7 @@ width: 9rem;
     width: 100%;
     background: white;
     min-height: 100vh;
-
+    margin-top: 120px;
 }
 
 
