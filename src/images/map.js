@@ -37,160 +37,100 @@ function Icon(props) {
          transform="matrix(.3076 0 0 .3076 -3.75 -23.905)"
        ></path>
      </g>
-     <ellipse
-       fill="#000000"
-       cx="63.578"
-       cy="100.67"
-       rx="3.514"
-       ry="3.378"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.02175 0 0 2.13238 168.5 163.573)"
-     ></ellipse>
-     <path
-       fill="none"
-       stroke="#000"
-       strokeWidth="1"
-       d="M68.71 95.065l-39.189 63.784"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(12.188 77.712) scale(3.25089)"
-     ></path>
-     <path
-       fill="none"
-       stroke="#000"
-       strokeWidth="1.16"
-       d="M68.71 95.065l-39.189 63.784"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.49267 1.1712 -1.21792 2.59209 414.919 -65.571)"
-     ></path>
-     <path
-       fill="none"
-       stroke="#000"
-       strokeWidth="0.97"
-       d="M68.71 95.065l-39.189 63.784"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(4.01655 1.88721 -.68937 1.46718 243.8 -120.994)"
-     ></path>
-     <path
-       fill="none"
-       stroke="#000"
-       strokeWidth="1.69"
-       d="M68.71 95.065l-39.189 63.784"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(-.07709 1.97191 -1.87328 -.07323 426.12 190.255)"
-     ></path>
-     <text
-       x="16.701"
-       y="169.299"
-       fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
-       fontSize="12"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(9.489 69.512) scale(3.25089)"
-     >
-       Cali
-     </text>
-     <text
-       x="16.701"
-       y="169.299"
-       fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
-       fontSize="12"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(-38.045 -324.46) scale(3.25089)"
-     >
-       Meddelin
-     </text>
-     <text
-       x="16.701"
-       y="169.299"
-       fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
-       fontSize="12"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(425.603 -287.119) scale(3.25089)"
-     >
-       Bogota
-     </text>
-     <text
-       x="16.701"
-       y="169.299"
-       fontFamily="'MyriadArabic-Regular', 'Myriad Arabic'"
-       fontSize="12"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) translate(413.653 -398.44) scale(3.25089)"
-     >
-       Car
-       <tspan x="28.753" y="169.299">
-         t
-       </tspan>
-       agène
-     </text>
-     <ellipse
-       fill="#000000"
-       cx="63.578"
-       cy="100.67"
-       rx="3.514"
-       ry="3.378"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.02175 0 0 2.13238 108.328 170.77)"
-     ></ellipse>
-     <ellipse
-       fill="#000000"
-       cx="63.578"
-       cy="100.67"
-       rx="3.514"
-       ry="3.378"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.02175 0 0 2.13238 118.405 106.567)"
-     ></ellipse>
-     <ellipse
-       fill="#000000"
-       cx="63.578"
-       cy="100.67"
-       rx="3.514"
-       ry="3.378"
-       transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(2.02175 0 0 2.13238 122.166 -46.059)"
-     ></ellipse>
 
+
+
+
+          <ellipse
+            className="point"
+          id="Wayuu"
+          onClick={props.click}
+            fill="#F73A60"
+            cx="87.535"
+            cy="37.67"
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 87.276 -24.885)"
+          ></ellipse>
+
+        <ellipse
+          className="point"
+        id="Kamëntšá, Inga"
+        onClick={props.click}
+          fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 383.512)"
+      ></ellipse>
+      <ellipse
+        className="point"
+      id="Murui"
+      onClick={props.click}
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 4.953 444.804)"
+      ></ellipse>
 
       <ellipse
-      id="wayuu"
+        className="point"
+      id="Tikuna, Cocama, Yagua"
       onClick={props.click}
-     cx="87.535"
-     cy="37.67"
-     fill="#F73A60"
-     rx="3.114"
-     ry="3.027"
-     transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -7.7 69.74)"
-   ></ellipse>
-
-   <ellipse
-   id="autre"
-   onClick={props.click}
-    cx="87.535"
-    cy="37.67"
-    fill="#5D4DE1"
-    rx="3.114"
-    ry="3.027"
-    transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -14.728 280.608)"
-  ></ellipse>
-
-  <ellipse
-    id="Putumayo"
-    onClick={props.click}
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 383.512)"
-        ></ellipse>
-        <ellipse
-          id="Caqueta"
-          onClick={props.click}
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 4.953 444.804)"
-        ></ellipse>
-        <ellipse
-          id="Amazonas"
-          onClick={props.click}
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 140.471 561.774)"
-        ></ellipse>
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 140.471 561.774)"
+      ></ellipse>
+      <ellipse
+        className="point"
+      id="Nukak"
+      onClick={props.click}
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 53.087 350.335)"
+      ></ellipse>
+      <ellipse
+        className="point"
+      id="Sikuani"
+      onClick={props.click}
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 176.347 285.107)"
+      ></ellipse>
+      <ellipse
+        className="point"
+      id="Arhuaco"
+      onClick={props.click}
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -4.944 30.04)"
+      ></ellipse>
+      <ellipse
+        className="point"
+      id="Zenú, Emberaa"
+      onClick={props.click}
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -57.577 116.818)"
+      ></ellipse>
     </svg>
   );
 }

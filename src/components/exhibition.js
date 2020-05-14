@@ -148,7 +148,16 @@ this.getData();
             <div id="side4" style={css}> </div>
             <div id="side7" style={css2}>
             {side.node.photo?
-              <img className="exibitPicture" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+
+              <>
+            {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
+              <img className="exibitPicture"style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+
+              :
+              <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+
+            }
+            </>
               :   <p className="infoPicture">{side.node.info.info}</p>
 
             }
@@ -166,8 +175,16 @@ this.getData();
             return   (<div id="side9" style={css}>
 
             {side.node.photo?
-              <img className="exibitPicture" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)}src={side.node.photo.file.url} />
 
+                            <>
+                          {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
+                            <img className="exibitPicture"style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+
+                            :
+                            <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+
+                          }
+                          </>
               :   <div> <p className="infoPicture">{side.node.info.info}</p></div>
 
             }

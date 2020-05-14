@@ -2,7 +2,7 @@ import mobx, {observable, action, decorate} from 'mobx';
 
 class myStore {
 
-  @observable expo = "wayuu";
+  @observable expo = "Wayuu";
 
   @action changeExpo (x) {
   this.expo = x;

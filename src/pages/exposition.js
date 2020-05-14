@@ -35,7 +35,7 @@ class SecondPage extends Component {
 
     return (
       <div>
-        {this.state.datas !="" ?   <Exhibition datas={this.state.datas}/> :   <p>ok</p>}
+        {this.state.datas !="" ?   <Exhibition datas={this.state.datas}/> :   <p></p>}
 
       </div>
     );
@@ -56,7 +56,13 @@ allContentfulExpo {
       }
       photo {
         file {
-          url
+          details {
+              image {
+                width
+                height
+              }
+            }
+            url
         }
       }
     }
