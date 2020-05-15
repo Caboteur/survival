@@ -7,12 +7,6 @@
     margin-left: 25px;
 }
 
-.igapo{
-  width: 3.7rem;
-  display: inline-block;
-    margin-left: 30px;
-}
-
 .text{
   font-family: 'Exo', sans-serif;
   color: #4d72d1;
@@ -23,4 +17,27 @@
 
 .container{
   position: relative;
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes opacity {
+0% {
+    opacity:1;
+      margin-top: 30%;
+  }
+
+  90%{
+    opacity:1;
+      height: 100%;
+        margin-top: 30%;
+  }
+  100%
+  {
+      margin-top: 0%;
+   height: 0px;
+    opacity:0;
+  }
 }

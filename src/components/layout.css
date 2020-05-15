@@ -361,5 +361,7 @@ animation-fill-mode: forwards;
 }
 
 .read-more-button{
-  color: black;
+  color: #f73b61;
+font-family: 'Megrim', cursive;
+  font-weight: 800;
 }
