@@ -324,6 +324,7 @@ animation-fill-mode: forwards;
     left: 7%;
     bottom: 0;
     right: 0;
+    
 }
 
 .description{
@@ -364,4 +365,13 @@ animation-fill-mode: forwards;
   color: #f73b61;
 font-family: 'Megrim', cursive;
   font-weight: 800;
+}
+
+
+ellipse:hover{
+  fill:red;
+}
+
+.css-f5brtt-BaseToolTop{
+  white-space: normal;
 }

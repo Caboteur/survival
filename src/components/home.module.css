@@ -397,6 +397,7 @@ width: 38%;
     top: 14%;
     left: 7%;
     right: 0;
+    
 }
 
 .description{
@@ -427,6 +428,7 @@ width: 38%;
   margin: auto;
     color: #4d72d1;
     display: table;
+    margin-top: 30px;
 }
 
 a:-webkit-any-link{
@@ -473,7 +475,7 @@ a:-webkit-any-link{
 }
 
 .mapSvg{
-  max-width: 500px;
+  max-width: 518px;
 }
 
 .pb{

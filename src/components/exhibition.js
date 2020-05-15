@@ -76,9 +76,11 @@ this.getData();
   this.setState({src:e.target.src})
   this.state.display === "none"? this.setState({display:"inherit"}) : this.setState({display:"none"})
   }
-  handleload(){
+  handleload(e){
+
+
     this.setState({load:"none"})
-    console.log( document.getElementsByClassName("exibitPicture").complete);
+
   }
 
   render() {
@@ -122,13 +124,15 @@ this.getData();
 
       {
         this.state.data.map((side, index)=>{
-         const end = this.state.data.length - 1;
+         const end = this.state.data.length + 1;
+         const calc = window.innerHeight - window.innerWidth;
+         console.log(calc);
           z1 = z1 + 700;
           z2 = z2 + 700;
           x1 = x1 + 700;
           x2 = x2 + 700;
 
-          if(index === end){
+          if(index === end && calc < 0){
 
             let ctrans = 'rotateY(90deg) translateX(0px) translateY(0px) translateZ('+z1+'px)';
             let css = {

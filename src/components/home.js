@@ -41,6 +41,7 @@ class Home extends Component {
 
   componentDidMount(){
     this.checkMobil();
+    console.log(data);
   }
 
 
@@ -62,7 +63,7 @@ class Home extends Component {
     this.setState({color:"#5D4DE1"})
 
 
-    const ellipse = document.getElementsByTagName("ellipse");
+    const ellipse = document.getElementsByClassName("point");
     const point = e.target.id;
     for (var item of ellipse) {
       item.style.fill="#5D4DE1";
