@@ -326,10 +326,13 @@ color: #416df7;
 }
 @keyframes rotate {
   from{
-
+    -moz-transform:translateX(61px);
+    -webkit-transform:translateX(61px);
     transform: translateX(61px);
   }to{
 
+    -moz-transform:translateX(0px);
+    -webkit-transform:translateX(0px);
     transform: translateX(0px);
   }
 }

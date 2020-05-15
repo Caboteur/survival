@@ -15,28 +15,37 @@
 
 @keyframes transform {
   from{
+    -moz-transform:rotateY(-83deg);
+    -webkit-transform:rotateY(-83deg);
     transform: rotateY(-83deg);
   }to{
+    -moz-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
     transform: rotateY(0deg);
   }
 }
 
 @keyframes width {
   from{
+
+    -moz-transform:translateX(-62px);
+    -webkit-transform:translateX(-62px);
     transform: translateX(-62px);
-
   }to{
+    -moz-transform:translateX(0px);
+    -webkit-transform:translateX(0px);
     transform: translateX(0px);
-
   }
 }
 
 @keyframes rotate {
   from{
-
+    -moz-transform:translateX(61px);
+    -webkit-transform:translateX(61px);
     transform: translateX(61px);
   }to{
-
+    -moz-transform:translateX(0px);
+    -webkit-transform:translateX(0px);
     transform: translateX(0px);
   }
 }
