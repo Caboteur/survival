@@ -162,9 +162,19 @@ body{
     background: blue;
 }
 
-.exibitPicture{
+.exibitPictureMin{
+  width:"45%";
  box-shadow: 6px 6px 7px #00000078;
 }
+
+.exibitPictureLarge{
+  width:"70%";
+ box-shadow: 6px 6px 7px #00000078;
+}
+
+  @media screen and (min-width: 1700px) {
+
+  }
 
 img{
   width: 70%;
@@ -279,6 +289,7 @@ animation-fill-mode: forwards;
   font-weight: 100;
   color: #4d73d2;
   zoom: 1.2;
+  font-family: 'Exo', sans-serif;
 }
 
 @media only screen and (max-width : 920px)
@@ -341,7 +352,7 @@ animation-fill-mode: forwards;
 {
 
 #map{
-left:7%;
+left:4%;
 }
 }
 

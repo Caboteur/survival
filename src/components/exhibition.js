@@ -161,7 +161,6 @@ this.getData();
 
              </div>
 
-             <div id="side8" style={css3}>  </div>
             </>
         )
       }else{
@@ -197,10 +196,10 @@ this.getData();
 
               <>
             {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
-              <img className="exibitPicture"style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+              <img className="exibitPictureMin" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
               :
-              <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+              <img className="exibitPictureLarge" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
             }
             </>
@@ -224,10 +223,10 @@ this.getData();
 
                             <>
                           {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
-                            <img className="exibitPicture"style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+                            <img className="exibitPictureMin" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
                             :
-                            <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+                            <img className="exibitPictureLarge" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
                           }
                           </>

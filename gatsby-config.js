@@ -22,7 +22,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: `Luttes autochtones de colombie`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Exposition photographique sur les luttes des peuples autochtones en Colombie.`,
     author: `Adrien Blanchot`,
   },
   plugins: [
@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#ffff`,
         theme_color: `#ffff`,
         display: `minimal-ui`,
-        icon: `src/images/site.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/iconsite.png`, // This path is relative to the root of the site.
       },
 
     },
