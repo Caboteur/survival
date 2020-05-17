@@ -331,10 +331,18 @@ animation-fill-mode: forwards;
   width: 50%;
     position: absolute;
     top: 16%;
-    left: 7%;
+    left: 11%;
     bottom: 0;
     right: 0;
+    overflow: auto;
+}
 
+@media only screen and (max-width : 920px)
+{
+
+#map{
+left:7%;
+}
 }
 
 .description{

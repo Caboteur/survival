@@ -4,7 +4,7 @@
 
 .mapSvg{
   width: 80%;
-  max-width: 650px;
+  max-width: 500px;
 }
 
 .grid-container {
@@ -76,6 +76,7 @@
     }
   }
 }
+
 
 
 #wrapD3Cube {
@@ -183,8 +184,9 @@ img{
 }
 
 @media only screen and (max-width : 920px)
-
 {
+
+
   .mapSvg{
   margin-top: 34%;
     max-width: 526px;
@@ -399,9 +401,17 @@ width: 10%;
 width: 38%;
     position: absolute;
     top: 14%;
-    left: 7%;
+    left: 11%;
     right: 0;
 overflow: auto;
+}
+
+@media only screen and (max-width : 920px)
+{
+
+#map{
+left:7%;
+}
 }
 
 .description{
