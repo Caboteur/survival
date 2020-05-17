@@ -15,8 +15,12 @@ class ThirdPage extends Component {
                <title>Luttes autochtones de colombie</title>
                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
                <link rel="canonical" href="http://mysite.com/example" />
-               <meta name="description" content="Exposition photo sur les luttes des peuples autochtones en Colombie." />
-           </Helmet>
+               <meta name="description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
+                 <meta property="og:title" content="Luttes autochtones de Colombie" />
+                   <meta property="og:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
+                     <meta property="og:image" content="/site.jpg" />
+                       <meta property="og:url" content="http://euro-travel-example.com/index.htm" />
+         </Helmet>
       <IntroExpo />
       </div>
 
