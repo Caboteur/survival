@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 
-
+.mapSvg{
+  width: 80%;
+  max-width: 650px;
+}
 
 .grid-container {
   background: #efefef;
@@ -186,6 +189,7 @@ img{
   margin-top: 34%;
     max-width: 526px;
       margin-left: 20px;
+      width: auto;
 }
   #side3 {
       transform: translateX(0px) translateY(0px) translateZ(50vw);
@@ -474,9 +478,6 @@ a:-webkit-any-link{
   margin-right: 20px;
 }
 
-.mapSvg{
-  max-width: 500px;
-}
 
 .pb{
   font-family: 'Exo', sans-serif;

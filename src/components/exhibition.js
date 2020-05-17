@@ -28,7 +28,8 @@ class SecondPage extends Component {
   }
 
   componentDidMount(){
-
+   const b = document.body;
+   b.style.overflowY = "hidden";
     if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/iPhone/i)
@@ -114,7 +115,7 @@ this.getData();
         </div>
 
          <Modal url={this.state.src} display={this.state.display} click={this.modalClick.bind(this)}/>
-        <article className="grid-item main">
+        <article style={{overflowY: "hidden"}} className="grid-item main">
           <section id="item"
            style={{overflow:this.state.overflow}}
            onMouseDown={this.handleDown.bind(this)}

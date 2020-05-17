@@ -9,10 +9,12 @@
 }
 
 .text{
-  font-family: 'Exo', sans-serif;
-  color: #4d72d1;
+font-family: 'Megrim', cursive;
+  color: black;
+  font-weight: 800;
     font-size: 22px;
-    text-align: center;
+    margin-left: 25px;
+    text-align: left;
 }
 
 
@@ -40,5 +42,14 @@
       margin-top: 0%;
    height: 0px;
     opacity:0;
+  }
+}
+
+@media only screen and (max-width : 920px)
+
+{
+  .logo{
+      width: 5rem;
+
   }
 }

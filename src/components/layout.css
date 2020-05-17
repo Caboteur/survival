@@ -281,6 +281,15 @@ animation-fill-mode: forwards;
   zoom: 1.2;
 }
 
+@media only screen and (max-width : 920px)
+
+{
+  .infoPicture{
+    width: 48%;
+    margin-top: 30%;
+  }
+}
+
 
 
 
@@ -363,7 +372,7 @@ animation-fill-mode: forwards;
 }
 
 .read-more-button{
-  color: #f73b61;
+  color: black;
 font-family: 'Megrim', cursive;
   font-weight: 800;
 }
