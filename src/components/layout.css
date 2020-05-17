@@ -36,6 +36,7 @@ body{
 
   .main {
     background-color: #ececec;
+    height: 102vh;
   }
 
   .items {
@@ -324,7 +325,7 @@ animation-fill-mode: forwards;
     left: 7%;
     bottom: 0;
     right: 0;
-    
+
 }
 
 .description{
@@ -369,7 +370,7 @@ font-family: 'Megrim', cursive;
 
 
 ellipse:hover{
-  fill:red;
+  fill:black;
 }
 
 .css-f5brtt-BaseToolTop{

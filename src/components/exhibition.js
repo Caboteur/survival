@@ -22,7 +22,8 @@ class SecondPage extends Component {
       data:[],
       display:"none",
       src:"",
-      load:"inherit"
+      load:"inherit",
+      width:100
     }
   }
 
@@ -45,9 +46,12 @@ this.getData();
 
   async getData(){
     const datas = await  this.props.datas
+    datas.push({node:"id"})
     await console.log(datas);
     this.setState({data:datas})
     await this.state.data.map((t)=>{console.log(t)})
+    const tot = (700 * (this.state.data.length - 2)) ;
+    this.setState({width:tot})
   }
 
   handleDown(e){
@@ -64,11 +68,12 @@ this.getData();
     this.setState({isDown : false})
   }
   handleMove(e){
-    console.log("move")
+
     let name=document.getElementById('item')
     if(!this.state.isDown) return;
   e.preventDefault();
   const x = e.pageX - name.offsetLeft;
+
   const walk = (x - this.state.startX) * 3;
   name.scrollLeft = this.state.scrollLeft - walk;
   }
@@ -118,22 +123,21 @@ this.getData();
           onMouseMove={this.handleMove.bind(this)}
           className="items">
 
-  <div className="D3Cube">
+  <div style={{width:this.state.width+"px"}} className="D3Cube">
 
 
 
       {
         this.state.data.map((side, index)=>{
-         const end = this.state.data.length + 1;
+         const end = this.state.data.length - 1;
          const calc = window.innerHeight - window.innerWidth;
-         console.log(calc);
           z1 = z1 + 700;
           z2 = z2 + 700;
           x1 = x1 + 700;
           x2 = x2 + 700;
 
-          if(index === end && calc < 0){
 
+          if(index === end ){
             let ctrans = 'rotateY(90deg) translateX(0px) translateY(0px) translateZ('+z1+'px)';
             let css = {
              transform: ctrans
@@ -146,6 +150,8 @@ this.getData();
             let css3= {
              transform: ctrans3
            }
+            if (calc < 0){
+
 
            return (
             <>
@@ -157,7 +163,15 @@ this.getData();
              <div id="side8" style={css3}>  </div>
             </>
         )
-          }
+      }else{
+        return (
+         <>
+         <div id="side4" style={css}> </div>
+         </>
+     )
+
+      }
+        }
 
           else if(index === 0 || index % 3 === 0 ){
 

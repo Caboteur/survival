@@ -46,7 +46,7 @@ export default SecondPage;
 
   export const pageQuery = graphql`
   query MyQuery {
-allContentfulExpo (sort: {fields: [date], order: DESC}) {
+allContentfulExpo (sort: {fields: [date], order: ASC}) {
   edges {
     node {
       id
