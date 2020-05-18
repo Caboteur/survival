@@ -167,7 +167,7 @@ render() {
 
                   <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
 
-                  <div>
+                  <div className={styles.pbcontainer}>
                   <h1 className={styles.pb}>Problématiques</h1>
                   {
                     this.state.icon.map((icon)=>{

@@ -183,6 +183,10 @@ img{
       width: 12rem;
 }
 
+.pbcontainer{
+  margin-left: 50px;
+}
+
 @media only screen and (max-width : 920px)
 {
 
@@ -470,6 +474,25 @@ a:-webkit-any-link{
   border: 3px solid var(--scrollbarBG);
 }
 
+#map {
+  --scrollbarBG: #fdfeff;
+      --thumbBG: #e9e9e9;
+}
+#map::-webkit-scrollbar {
+  width: 11px;
+}
+#map {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+#map::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+#map::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
 
 
 
@@ -496,7 +519,7 @@ a:-webkit-any-link{
 
 .follow{
   position: relative;
-    width: 12rem;
+    width: 10rem;
     margin-top: 10px;
 }
 

@@ -48,7 +48,7 @@ this.getData();
   async getData(){
     const datas = await  this.props.datas
     datas.push({node:"id"})
-    await console.log(datas.length);
+    await console.log(datas);
     this.setState({data:datas})
     await this.state.data.map((t)=>{console.log(t)})
     const tot = (700 * (this.state.data.length - 2)) ;
@@ -130,7 +130,6 @@ this.getData();
 
       {
         this.state.data.map((side, index)=>{
-          console.log(index);
          const end = this.state.data.length - 1;
          const calc = window.innerHeight - window.innerWidth;
           z1 = z1 + 700;
@@ -162,6 +161,7 @@ this.getData();
 
              </div>
 
+             <div id="side8" style={css3}>  </div>
             </>
         )
       }else{
@@ -197,10 +197,10 @@ this.getData();
 
               <>
             {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
-              <img className="exibitPictureMin" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+              <img className="exibitPicture" style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
               :
-              <img className="exibitPictureLarge" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+              <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
             }
             </>
@@ -224,10 +224,10 @@ this.getData();
 
                             <>
                           {side.node.photo.file.details.image.height > side.node.photo.file.details.image.width?
-                            <img className="exibitPictureMin" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+                            <img className="exibitPicture"style={{width:"45%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
                             :
-                            <img className="exibitPictureLarge" onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
+                            <img className="exibitPicture"style={{width:"70%"}} onLoad={this.handleload.bind(this)} onClick={this.modalClick.bind(this)} src={side.node.photo.file.url} ></img>
 
                           }
                           </>
