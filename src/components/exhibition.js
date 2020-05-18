@@ -48,7 +48,7 @@ this.getData();
   async getData(){
     const datas = await  this.props.datas
     datas.push({node:"id"})
-    await console.log(datas);
+    await console.log(datas.length);
     this.setState({data:datas})
     await this.state.data.map((t)=>{console.log(t)})
     const tot = (700 * (this.state.data.length - 2)) ;
@@ -130,6 +130,7 @@ this.getData();
 
       {
         this.state.data.map((side, index)=>{
+          console.log(index);
          const end = this.state.data.length - 1;
          const calc = window.innerHeight - window.innerWidth;
           z1 = z1 + 700;
