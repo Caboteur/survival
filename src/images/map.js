@@ -41,96 +41,104 @@ function Icon(props) {
 
 
 
+
+
+      <ellipse
+        className="point"
+      id="Kamëntšá, Inga"
+      onClick={props.click}
+            fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
+
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 386.811)"
+          ></ellipse>
+          <ellipse
+            className="point"
+          id="Murui"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
+
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 3.453 449.303)"
+          ></ellipse>
           <ellipse
             className="point"
           id="Wayuu"
           onClick={props.click}
-            fill="#F73A60"
+                fill="#F73A60"
             cx="87.535"
             cy="37.67"
+
             rx="3.114"
             ry="3.027"
             transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 87.276 -24.885)"
           ></ellipse>
+          <ellipse
+            className="point"
+          id="Tikuna, Cocama, Yagua"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
 
-        <ellipse
-          className="point"
-        id="Kamëntšá, Inga"
-        onClick={props.click}
-          fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 383.512)"
-      ></ellipse>
-      <ellipse
-        className="point"
-      id="Murui"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 4.953 444.804)"
-      ></ellipse>
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 139.871 554.876)"
+          ></ellipse>
+          <ellipse
+            className="point"
+          id="Nukak"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
 
-      <ellipse
-        className="point"
-      id="Tikuna, Cocama, Yagua"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 140.471 561.774)"
-      ></ellipse>
-      <ellipse
-        className="point"
-      id="Nukak"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 53.087 350.335)"
-      ></ellipse>
-      <ellipse
-        className="point"
-      id="Sikuani"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 176.347 285.107)"
-      ></ellipse>
-      <ellipse
-        className="point"
-      id="Arhuaco"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -4.944 30.04)"
-      ></ellipse>
-      <ellipse
-        className="point"
-      id="Zenú, Emberaa"
-      onClick={props.click}
-        fill="rgb(93, 77, 225)"
-        cx="87.535"
-        cy="37.67"
-        rx="3.114"
-        ry="3.027"
-        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -57.577 116.818)"
-      ></ellipse>
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 55.438 354.438)"
+          ></ellipse>
+          <ellipse
+            className="point"
+          id="Sikuani"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
+
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 182.848 291.608)"
+          ></ellipse>
+          <ellipse
+            className="point"
+          id="Arhuaco"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
+
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -7.343 27.641)"
+          ></ellipse>
+          <ellipse
+            className="point"
+          id="Zenú, Emberaa"
+          onClick={props.click}
+                fill="rgb(93, 77, 225)"
+            cx="87.535"
+            cy="37.67"
+
+            rx="3.114"
+            ry="3.027"
+            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -49.78 112.919)"
+          ></ellipse>
       <path
           fill="#FD264F"
           fillRule="nonzero"
