@@ -22,13 +22,13 @@ function SEO() {
            <meta name="description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
              <meta property="og:title" content="Luttes autochtones de Colombie" />
                <meta property="og:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
-                 <meta property="og:image" content='https://images.ctfassets.net/s8p26a84thqj/2QhUD5gBCEA0eZcMS1wI2w/3b0eefab9f51680b386f94efd14cf8b7/site.png?h=250' />
+                 <meta property="og:image" content='https://images.ctfassets.net/s8p26a84thqj/2mRVO9EwbWBtXisT7SXTqU/dde21703232389298d5796612d2753b8/indigene.jpg?h=250' />
                    <meta property="og:url" content="https://fervent-bardeen-b6b6c9.netlify.app/" />
                      <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="http://myawesomewebsite.com/" />
+          <meta property="twitter:url" content="https://fervent-bardeen-b6b6c9.netlify.app/" />
           <meta property="twitter:title" content="Luttes autochtones de Colombie" />
           <meta property="twitter:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
-          <meta property="twitter:image" content='https://images.ctfassets.net/s8p26a84thqj/2QhUD5gBCEA0eZcMS1wI2w/3b0eefab9f51680b386f94efd14cf8b7/site.png?h=250' />
+          <meta property="twitter:image" content='https://images.ctfassets.net/s8p26a84thqj/2mRVO9EwbWBtXisT7SXTqU/dde21703232389298d5796612d2753b8/indigene.jpg?h=250' />
     </Helmet>
   )
 }
