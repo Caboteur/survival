@@ -11,17 +11,26 @@ class SocialComponent extends Component {
   constructor() {
     super();
     this.state={
-      open:false
+      open:false,
+      width:100,
     }
   }
 
 
+
   handleClick(){
+    console.log(isTablet);
+    if (isTablet){
+      console.log("tablet");
+      this.setState({width:52})
+    }
       this.state.open? this.setState({open:false}) : this.setState({open:true})
     console.log("ok");
   }
 
   render() {
+
+
 
     return (
   <>
@@ -29,7 +38,7 @@ class SocialComponent extends Component {
         <div>
         <img className={styles.link} onClick={this.handleClick.bind(this)} src={link}></img>
         {this.state.open?
-          <div className={styles.containerlogoMobile}>
+          <div style={{width:this.state.width+"%"}} className={styles.containerlogoMobile}>
             <a target="_blank" href="https://www.survivalinternational.fr/"><img className={styles.logoMobile} src={survival} target="_blank"></img></a>
             <a  target="_blank" href='https://igapo-project.jimdofree.com'><img className={styles.logoMobile} src={igapo} target="_blank"></img></a>
             <a  target="_blank" href="https://www.humanconet.org/fr/"><img className={styles.logoMobile} src={humanconet} target="_blank"></img></a>
