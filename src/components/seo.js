@@ -8,24 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+function SEO() {
 
-  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet>
@@ -42,22 +27,11 @@ function SEO({ description, lang, meta, title }) {
         <meta property="twitter:url" content="http://myawesomewebsite.com/" />
         <meta property="twitter:title" content="Luttes autochtones de Colombie" />
         <meta property="twitter:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
-        <meta property="twitter:image" content={site} />
+        <meta property="twitter:image" content='https://images.ctfassets.net/s8p26a84thqj/2QhUD5gBCEA0eZcMS1wI2w/3b0eefab9f51680b386f94efd14cf8b7/site.png?h=250' />
    </Helmet>
   )
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
 
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
 
 export default SEO

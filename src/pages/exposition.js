@@ -6,6 +6,7 @@ import { observer } from 'mobx-react';
 import mobx from "mobx";
 import myStore from '../store/store.js'
 import get from 'lodash/get'
+import Seo from '../components/seo.js'
 
 @observer
 class SecondPage extends Component {
@@ -35,8 +36,8 @@ class SecondPage extends Component {
 
     return (
       <div>
+        <Seo />
         {this.state.datas !="" ?   <Exhibition datas={this.state.datas}/> :   <p></p>}
-
       </div>
     );
   }
