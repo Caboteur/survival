@@ -28,47 +28,22 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <Helmet>
+         <meta charSet="utf-8"  />
+         <title>Luttes autochtones de Colombie</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+         <link rel="canonical" href="http://mysite.com/example" />
+         <meta name="description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
+           <meta property="og:title" content="Luttes autochtones de Colombie" />
+             <meta property="og:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
+               <meta property="og:image" content='/site.png' />
+                 <meta property="og:url" content="http://euro-travel-example.com/index.htm" />
+                   <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="http://myawesomewebsite.com/" />
+        <meta property="twitter:title" content="Luttes autochtones de Colombie" />
+        <meta property="twitter:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
+        <meta property="twitter:image" content={site} />
+   </Helmet>
   )
 }
 

@@ -30,9 +30,9 @@ class SocialComponent extends Component {
         <img className={styles.link} onClick={this.handleClick.bind(this)} src={link}></img>
         {this.state.open?
           <div className={styles.containerlogoMobile}>
-            <a href="https://www.survivalinternational.fr/"><img className={styles.logoMobile} src={survival}></img></a>
-            <a href='https://igapo-project.jimdofree.com'><img className={styles.logoMobile} src={igapo}></img></a>
-            <a href="https://www.humanconet.org/fr/"><img className={styles.logoMobile} src={humanconet}></img></a>
+            <a target="_blank" href="https://www.survivalinternational.fr/"><img className={styles.logoMobile} src={survival} target="_blank"></img></a>
+            <a  target="_blank" href='https://igapo-project.jimdofree.com'><img className={styles.logoMobile} src={igapo} target="_blank"></img></a>
+            <a  target="_blank" href="https://www.humanconet.org/fr/"><img className={styles.logoMobile} src={humanconet} target="_blank"></img></a>
           </div>
            : <p></p>
         }
@@ -40,9 +40,9 @@ class SocialComponent extends Component {
 
 :
 <div>
-<a href="https://www.survivalinternational.fr/"><img className={styles.logo} src={survival}></img></a>
-<a href='https://igapo-project.jimdofree.com'><img className={styles.logo} src={igapo}></img></a>
-<a href="https://www.humanconet.org/fr/"><img className={styles.logo} src={humanconet}></img></a>
+<a target="_blank" href="https://www.survivalinternational.fr/"><img className={styles.logo} src={survival} target="_blank"></img></a>
+<a  target="_blank" href='https://igapo-project.jimdofree.com'><img className={styles.logo} src={igapo} target="_blank"></img></a>
+<a target="_blank" href="https://www.humanconet.org/fr/"><img className={styles.logo} src={humanconet} target="_blank"></img></a>
 
 </div>
 

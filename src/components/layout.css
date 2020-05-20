@@ -286,7 +286,7 @@ animation-fill-mode: forwards;
 }
 
 .infoPicture{
-  white-space: normal;
+  white-space: pre-line;
   width: 70%;
   margin: auto;
   display: block;

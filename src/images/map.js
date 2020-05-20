@@ -45,7 +45,7 @@ function Icon(props) {
 
       <ellipse
         className="point"
-      id="Kamëntšá, Inga"
+      id="Kamëntsá, Inga"
       onClick={props.click}
             fill="rgb(93, 77, 225)"
             cx="87.535"
