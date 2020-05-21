@@ -612,3 +612,11 @@ width: 7rem;
   padding: 100px;
 }
 }
+
+@media only screen and (min-width : 2000px)
+{
+  .description{
+    padding: 60px;
+  }
+
+}
