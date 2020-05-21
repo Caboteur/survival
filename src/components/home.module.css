@@ -185,6 +185,7 @@ img{
 
 .pbcontainer{
   margin-left: 50px;
+  white-space: initial;
 }
 
 @media only screen and (max-width : 920px)
