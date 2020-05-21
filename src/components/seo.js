@@ -18,7 +18,7 @@ function SEO() {
       <meta charSet="utf-8"  />
            <title>Luttes autochtones de Colombie</title>
            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-
+           <link rel="icon" href="https://images.ctfassets.net/s8p26a84thqj/7E0zzHFT51dNsdeC8HuKFF/31e571f9cbff8a57627b450a7687ca50/iconsite.png?h=250">
            <meta name="description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
              <meta property="og:title" content="Luttes autochtones de Colombie" />
                <meta property="og:description" content="Exposition photographique sur les luttes des peuples autochtones en Colombie." />
