@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+
+
+
+
+  <ellipse
+        fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 386.811)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 3.453 449.303)"
+      ></ellipse>
+      <ellipse
+            fill="#F73A60"
+        cx="87.535"
+        cy="37.67"
+
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 87.276 -24.885)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 139.871 554.876)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 55.438 354.438)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 182.848 291.608)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -7.343 27.641)"
+      ></ellipse>
+      <ellipse
+            fill="rgb(93, 77, 225)"
+        cx="87.535"
+        cy="37.67"
+        rx="3.114"
+        ry="3.027"
+        transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -49.78 112.919)"
+      ></ellipse>
+</svg>
