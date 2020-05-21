@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#ffff`,
         theme_color: `#ffff`,
         display: `minimal-ui`,
-        icon: `src/images/iconsite.png`, // This path is relative to the root of the site.
+        icon: `/iconsite.png`, // This path is relative to the root of the site.
       },
       resolve: `gatsby-plugin-purgecss`,
       options: {

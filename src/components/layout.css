@@ -317,7 +317,30 @@ animation-fill-mode: forwards;
   }
 }
 
+@media only screen and (min-width : 5120px)
+{
+  .infoPicture{
+    white-space: pre-line;
+   width: 77%;
+   display: block;
+   margin: 72% auto auto;
+   font-weight: 100;
+   color: #4d73d2;
+   zoom: 1.2;
+   font-family: Exo,sans-serif;
+   font-size: 21px;
+  }
 
+  img {
+      width: 70%;
+      display: block;
+      margin: auto;
+      padding: re;
+      position: relative;
+      top: 38%;
+  }
+
+}
 
 
 
@@ -364,6 +387,8 @@ animation-fill-mode: forwards;
     overflow: auto;
 }
 
+
+
 @media only screen and (max-width : 920px)
 {
 
@@ -407,7 +432,7 @@ left:4%;
 }
 
 .read-more-button{
-  color: black;
+  color: black !important;
 font-family: 'Megrim', cursive;
   font-weight: 800;
 }

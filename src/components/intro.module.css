@@ -107,3 +107,16 @@ animation-play-state: running;
 height: 304px;
  }
 }
+
+@media only screen and (min-width : 5120px)
+{
+
+  .textIntro{
+    font-size: 27px;
+}
+
+.titleIntro{
+    font-size: 37px;
+}
+
+}

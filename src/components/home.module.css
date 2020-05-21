@@ -584,3 +584,31 @@ width: 7rem;
     width: 150px;
         margin-bottom: 2rem;
 }
+
+@media only screen and (min-width : 5120px)
+{
+  .logo{
+    position: absolute;
+    left: 14px;
+    top: 14px;
+   width: 20rem;
+}
+
+.mapSvg{
+    width: 80%;
+    max-width: 800px;
+    }
+    .begin{
+    text-align: center;
+    text-decoration: none!important;
+    font-family: Megrim,cursive;
+    color: #4d72d1;
+    display: table;
+    margin: 30px auto auto;
+    font-size: 40px;
+}
+
+.description{
+  padding: 100px;
+}
+}
