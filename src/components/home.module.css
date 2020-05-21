@@ -585,7 +585,7 @@ width: 7rem;
         margin-bottom: 2rem;
 }
 
-@media only screen and (min-width : 5120px)
+@media only screen and (min-width : 2880px)
 {
   .logo{
     position: absolute;
