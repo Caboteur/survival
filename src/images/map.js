@@ -40,249 +40,170 @@ function Icon(props) {
 
 
 
-
-     <g transform="matrix(1.19286 0 0 1.14615 -42.234 64.451)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 68.33 71.826)"
-        ></ellipse>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -29.261 -16.63)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 68.537 71.913)"
-        ></ellipse>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -67.91 2.289)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 68.082 72.269)"
-        ></ellipse>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -100.613 -71.495)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <clipPath id="_clip1">
-          <path d="M139.392 99.73H154.527V113.784H139.392z"></path>
-        </clipPath>
-        <g clip-path="url(#_clip1)">
-          <ellipse
-            cx="87.535"
-            cy="37.67"
-            fill="#5D4DE1"
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.89553 0 0 .92351 68.365 71.826)"
-          ></ellipse>
-          <path
-            fill="#EBEBEB"
-            fillOpacity="0"
-            d="M139.392 99.73H154.527V113.784H139.392z"
-            transform="translate(26.056 62.017)"
-          ></path>
-        </g>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -87.099 -97.44)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <clipPath id="_clip2">
-          <path d="M139.392 99.73H154.527V113.784H139.392z"></path>
-        </clipPath>
-        <g clip-path="url(#_clip2)">
-          <ellipse
-            cx="87.535"
-            cy="37.67"
-            fill="#5D4DE1"
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.89553 0 0 .92351 67.98 71.577)"
-          ></ellipse>
-          <path
-            fill="#EBEBEB"
-            fillOpacity="0"
-            d="M139.392 99.73H154.527V113.784H139.392z"
-            transform="translate(48.94 100.218)"
-          ></path>
-        </g>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -58.45 -114.468)">
-        <path
-        id="Wayuu"
+     <path
+       value="Tikuna, Cocama, Yagua"
+        id="Tikuna"
+          onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -42.234 64.451)"
+     ></path>
+     <ellipse
+       className="point"
+       value="Tikuna, Cocama, Yagua"
+        id="Tikuna"
+       className="point"
+          onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 39.274 146.775)"
+     ></ellipse>
+     <path
+       value="Sikuani"
+        id="Sikuani"
+       onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -29.261 -16.63)"
+     ></path>
+     <ellipse
+       className="point"
+       value="Sikuani"
+        id="Sikuani"
+       onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 52.494 65.794)"
+     ></ellipse>
+     <path
+       value="Nukak"
+       id="Nukak"
+       onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -67.91 2.289)"
+     ></path>
+   <ellipse
+     className="point"
+      value="Nukak"
+       id="Nukak"
+       onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 13.303 85.12)"
+     ></ellipse>
+     <path
+       value="Zenú, Emberaa"
+         id="Zenú"
+         onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -100.613 -71.495)"
+     ></path>
+     <ellipse
+       className="point"
+       value="Zenú, Emberaa"
+         id="Zenú"
+         onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 -19.062 10.829)"
+     ></ellipse>
+     <path
+       value="Arhuaco"
+        id="Arhuaco"
         onClick={props.click}
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          className="point"
-          cx="87.535"
-          cy="37.67"
-          fill="#F73A60"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 68.362 72.336)"
-        ></ellipse>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -83.315 32.019)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 67.592 71.79)"
-        ></ellipse>
-      </g>
-      <g transform="matrix(1.19286 0 0 1.14615 -124.396 13.1)">
-        <path
-          fill="#EBEBEB"
-          fillOpacity="0"
-          d="M139.392 99.73H154.527V113.784H139.392z"
-        ></path>
-        <ellipse
-          cx="87.535"
-          cy="37.67"
-          fill="#5D4DE1"
-          rx="3.114"
-          ry="3.027"
-          transform="matrix(.89553 0 0 .92351 69.067 71.525)"
-        ></ellipse>
-      </g>
-
-      <ellipse
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -87.099 -97.44)"
+     ></path>
+     <ellipse
+       className="point"
+         value="Arhuaco"
+        id="Arhuaco"
         className="point"
-      id="Kamëntsá, Inga"
-      onClick={props.click}
-            fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
+        onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 -6.009 -15.403)"
+     ></ellipse>
+   <path
+     value="Wayuu"
+         id="Wayuu"
+         onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -58.45 -114.468)"
+     ></path>
+     <ellipse
+        value="Wayuu"
+       className="point"
+         id="Wayuu"
+         onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#F73A60"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 23.096 -31.56)"
+     ></ellipse>
+     <path
+       value="Murui"
+         id="Murui"
+         onClick={props.click}
+       fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -83.315 32.019)"
+     ></path>
+     <ellipse
+       value="Murui"
+       className="point"
+         id="Murui"
+         onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 -2.688 114.301)"
+     ></ellipse>
+     <path
+       value="Kamëntsá, Inga"
+     id="Kamentsa"
+     onClick={props.click}
+        fill="#00000000"
+       d="M139.392 99.73H154.527V113.784H139.392z"
+       transform="matrix(1.19286 0 0 1.14615 -124.396 13.1)"
+     ></path>
+     <ellipse
+       value="Kamëntsá, Inga"
+       className="point"
+     id="Kamentsa"
+     onClick={props.click}
+       cx="87.535"
+       cy="37.67"
+       fill="#5D4DE1"
+       rx="3.114"
+       ry="3.027"
+       transform="matrix(1.06824 0 0 1.05849 -42.01 95.078)"
+     ></ellipse>
 
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -124.38 386.811)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Murui"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
 
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 3.453 449.303)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Wayuu"
-          onClick={props.click}
-                fill="#F73A60"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 87.276 -24.885)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Tikuna, Cocama, Yagua"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 139.871 554.876)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Nukak"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 55.438 354.438)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Sikuani"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 182.848 291.608)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Arhuaco"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -7.343 27.641)"
-          ></ellipse>
-          <ellipse
-            className="point"
-          id="Zenú, Emberaa"
-          onClick={props.click}
-                fill="rgb(93, 77, 225)"
-            cx="87.535"
-            cy="37.67"
-
-            rx="3.114"
-            ry="3.027"
-            transform="matrix(.3076 0 0 .3076 -3.75 -23.905) matrix(3.47282 0 0 3.44111 -49.78 112.919)"
-          ></ellipse>
           <path
           fill="#FD264F"
           fillRule="nonzero"

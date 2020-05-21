@@ -63,14 +63,17 @@ class Carte extends Component {
     this.setState({color:"#5D4DE1"})
 
 
-    const ellipse = document.getElementsByTagName("ellipse");
+    const ellipse = document.getElementsByClassName("point");
     const point = e.target.id;
+const targt = e.target.getAttribute("value");
+  const styling = document.querySelector("ellipse#"+point);
+
     for (var item of ellipse) {
       item.style.fill="#5D4DE1";
     }
-    e.target.style.fill="F73A60"
+    styling.style.fill="F73A60"
     data.team.map((people)=>{
-      if(people.id === point){
+      if(people.id === targt){
         this.setState({title:people.id})
         this.setState({description:people.info})
         this.setState({icon:people.icon}, console.log(people.icon))

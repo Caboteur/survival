@@ -1,4 +1,7 @@
 let contentfulConfig
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 try {
   // Load the Contentful config from the .contentful.json
@@ -8,7 +11,7 @@ try {
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
   spaceId: "s8p26a84thqj",
-  accessToken: "UVcw8LXr_Khh8QVu0Al56KSBgItJWr3EjCkyeSC5sYE",
+  accessToken: process.env.REACT_APP_CONTENTFUL,
 }
 
 const { spaceId, accessToken } = contentfulConfig

@@ -65,12 +65,15 @@ class Home extends Component {
 
     const ellipse = document.getElementsByClassName("point");
     const point = e.target.id;
+const targt = e.target.getAttribute("value");
+  const styling = document.querySelector("ellipse#"+point);
+
     for (var item of ellipse) {
       item.style.fill="#5D4DE1";
     }
-    e.target.style.fill="F73A60"
+    styling.style.fill="F73A60"
     data.team.map((people)=>{
-      if(people.id === point){
+      if(people.id === targt){
         this.setState({title:people.id})
         this.setState({description:people.info})
         this.setState({icon:people.icon}, console.log(people.icon))
@@ -114,7 +117,7 @@ render() {
             <>
             {this.state.pass==="none"?
               <>
-                <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
+                <img onClick={() => window.location.reload(false)} className={styles.logo} src={title} />
               <SocialComponent />
             <div >
 
@@ -165,7 +168,7 @@ render() {
               <div className={styles.container}>
             <div className={styles.left}>
 
-                <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
+                  <img onClick={() => window.location.reload(false)} className={styles.logo} src={title} />
               <SocialComponent />
 
               <div id="map">

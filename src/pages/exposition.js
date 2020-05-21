@@ -56,6 +56,9 @@ allContentfulExpo (sort: {fields: [date], order: ASC}) {
         info
       }
       photo {
+        fluid {
+        tracedSVG
+      }
         file {
           details {
               image {

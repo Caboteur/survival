@@ -16,6 +16,7 @@ left: -32%;
 right: 50%;
 }
 
+
 @media screen and (max-width: 500px) {
 .logocarte{
   width: 8rem;

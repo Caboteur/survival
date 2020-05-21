@@ -9,6 +9,7 @@ import { LadderLoading } from 'react-loadingg';
 import logoCarte from "../images/logoCarte.svg"
 import {isMobile} from 'react-device-detect';
 import {isTablet} from 'react-device-detect';
+import ProgressiveImage  from "react-progressive-image";
 
 class SecondPage extends Component {
   constructor() {
