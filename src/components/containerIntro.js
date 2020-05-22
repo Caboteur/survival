@@ -27,7 +27,7 @@ render() {
           </div>
           <div className={styles.centerSide}> </div>
           <div className={styles.rightSide}>
-          <img src={next} onClick={this.props.click} />
+          <img style={{width:"50%"}} src={next} onClick={this.props.click} />
           </div>
 
 
