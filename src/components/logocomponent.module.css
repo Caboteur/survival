@@ -19,6 +19,7 @@ font-family: 'Megrim', cursive;
 
 
 .container{
+  padding: 5%;
   position: relative;
   animation-name: opacity;
   animation-duration: 3s;

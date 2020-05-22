@@ -23,7 +23,7 @@ class SocialComponent extends Component {
     console.log(isTablet);
     if (isTablet){
       console.log("tablet");
-      this.setState({width:52})
+      this.setState({width:98})
     }
       this.state.open? this.setState({open:false}) : this.setState({open:true})
     console.log("ok");

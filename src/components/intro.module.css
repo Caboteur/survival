@@ -58,10 +58,12 @@ height: 452px;
 }
 
 .titleIntro{
+      margin-left: 25px;
+      padding: 5%;
   white-space: normal;
   font-family: 'Exo', sans-serif;
   color: #4d72d1;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
   animation-duration: 2s;
   animation-name : transition;
