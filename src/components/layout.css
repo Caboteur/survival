@@ -337,11 +337,16 @@ animation-fill-mode: forwards;
 
 @media only screen and (min-width : 2000px)
 {
+
+.D3Cube > div {
+    height: 66vh;
+}
+
   .infoPictureBack{
     white-space: pre-line;
    width: 77%;
    display: block;
-   margin: 42% auto auto;
+       margin: 30% auto auto;
    font-weight: 100;
    color: #4d73d2;
    zoom: 1.2;
@@ -353,7 +358,7 @@ animation-fill-mode: forwards;
     white-space: pre-line;
    width: 77%;
    display: block;
-   margin: 42% auto auto;
+     margin: 30% auto auto;
    font-weight: 100;
    color: #4d73d2;
    zoom: 1.2;
