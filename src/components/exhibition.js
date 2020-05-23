@@ -205,7 +205,7 @@ this.getData();
 
             }
             </>
-              :   <p className="infoPicture">{side.node.info.info}</p>
+          :   <p className="infoPictureBack">{side.node.info.info}</p>
 
             }
              </div>
@@ -232,7 +232,7 @@ this.getData();
 
                           }
                           </>
-                        :   <div> <p style={{fontSize: "13px"}} className="infoPicture">{side.node.info.info}</p></div>
+                        :   <div> <p  className="infoPictureTop">{side.node.info.info}</p></div>
 
             }
 
