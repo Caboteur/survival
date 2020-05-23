@@ -232,7 +232,7 @@ this.getData();
 
                           }
                           </>
-              :   <div> <p className="infoPicture">{side.node.info.info}</p></div>
+                        :   <div> <p style={{fontSize: "13px"}} className="infoPicture">{side.node.info.info}</p></div>
 
             }
 
