@@ -621,3 +621,24 @@ width: 7rem;
   }
 
 }
+
+
+.Click{
+  white-space: initial;
+font-size: 23px;
+font-family: 'Megrim', sans-serif;
+color: #7b95dc;
+padding: 20px;
+text-align: center;
+}
+
+.ClickMobile{
+  text-align: center;
+  font-family: 'Megrim', sans-serif;
+    padding: 17px;
+    color: #5176d2;
+    white-space: pre-line;
+    margin-top: 20%;
+    font-size: 22px;
+    font-weight: 800;
+}

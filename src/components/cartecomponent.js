@@ -34,7 +34,8 @@ class Carte extends Component {
       title:data.team[0].id,
       icon:data.team[0].icon,
       pass:"inherit",
-      tel:"none"
+      tel:"none",
+      selection:false,
     }
 
   }
@@ -60,9 +61,8 @@ class Carte extends Component {
 
 
   handleClick(e){
+      this.setState({selection:true})
     this.setState({color:"#5D4DE1"})
-
-
     const ellipse = document.getElementsByClassName("point");
     const point = e.target.id;
 const targt = e.target.getAttribute("value");
@@ -103,117 +103,143 @@ render() {
   return (
 
 
-    <Layout>
+        <Layout>
 
 
 
-      <article style={{overflow:this.state.overflow}} className={styles.gridItem}>
+          <article style={{overflow:this.state.overflow}} className={styles.gridItem}>
 
-        <section id="item"
-          style={{overflow:this.state.overflow}}
-          className={styles.items}>
+            <section id="item"
+              style={{overflow:this.state.overflow}}
+              className={styles.items}>
 
-          {this.state.mobile ?
-            <>
-              <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
-              <SocialComponent />
-            <div >
+              {this.state.mobile ?
+                <>
+
+                    <img onClick={() => window.location.reload(false)} className={styles.logo} src={title} />
+                  <SocialComponent />
+                <div >
 
 
-              <div className={styles.mobileMap} >
+                  <div className={styles.mobileMap} >
 
-                <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
+                    <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
 
-                <div className={styles.pbMobileContainer}>
-                <h1 className={styles.pbMobile}>Problématiques</h1>
-                {
-                  this.state.icon.map((icon)=>{
+                  {this.state.selection?
+                    <>
+                    <div className={styles.pbMobileContainer}>
+                    <h1 className={styles.pbMobile}>Problématiques</h1>
+                    {
+                      this.state.icon.map((icon)=>{
 
-                    return(
-                       <Tooltip
-                         style={{display:"block",float: "left", background:"#ffff"}}
-                         content={icon.title}>
-                      <img className={styles.iconMap} src={icon.url} />
-                      </Tooltip>
-                    )
-                  })
-                }
+                        return(
+                           <Tooltip
+                             style={{display:"block",float: "left", background:"#ffff"}}
+                             content={icon.title}>
+                          <img className={styles.iconMap} src={icon.url} />
+                          </Tooltip>
+                        )
+                      })
+                    }
+
+                    </div>
+                    <img className={styles.next} src={next} onClick={this.handleNext.bind(this)}/>
+
+                  </>
+                  :
+                  <div className={styles.ClickMobile}>Cliquez sur un point pour partir à la rencontre d'un peuple</div>
+
+                  }
+                  </div>
+                  <div className={styles.infoMobile} style={{display:this.state.tel}}>
+                    <h1 className={styles.begin}>{this.state.title}</h1>
+                    <p className={styles.description}>{this.state.description}</p>
+                      <img className={styles.followMobile} src={back} onClick={this.handleNext.bind(this)}/>
+                    <Link to="/exposition/"><img className={styles.followMobile} src={follow} /></Link>
 
                 </div>
-                <img className={styles.next} src={next} onClick={this.handleNext.bind(this)}/>
+
               </div>
 
-              <div className={styles.infoMobile} style={{display:this.state.tel}}>
-                <h1 className={styles.begin}>{this.state.title}</h1>
-                <p className={styles.description}>{this.state.description}</p>
-                  <img className={styles.follow} src={back} onClick={this.handleNext.bind(this)}/>
-                <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
 
-            </div>
+            </>
 
-          </div>
+              :
+
+               <>
 
 
-        </>
+                  <div className={styles.container}>
+                <div className={styles.left}>
 
-          :
+                      <img onClick={() => window.location.reload(false)} className={styles.logo} src={title} />
+                  <SocialComponent />
 
-           <>
+                  <div id="map">
 
-              <div className={styles.container}>
-            <div className={styles.left}>
+                      <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
+                      {this.state.selection?
+                      <div className={styles.pbcontainer}>
+                      <h1 className={styles.pb}>Problématiques</h1>
+                      {
+                        this.state.icon.map((icon)=>{
 
-              <Link to="/introduction"><img className={styles.logo} src={title} /></Link>
-              <SocialComponent />
+                          return(
+                             <Tooltip
+                               style={{display:"block",float: "left", background:"#ffff"}}
+                               content={icon.title}>
+                            <img className={styles.iconMap} src={icon.url} />
+                            </Tooltip>
+                          )
+                        })
+                      }
 
-              <div id="map">
-
-                  <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
-
-                  <div className={styles.pbcontainer}>
-                  <h1 className={styles.pb}>Problématiques</h1>
-                  {
-                    this.state.icon.map((icon)=>{
-
-                      return(
-                         <Tooltip
-                           style={{display:"block",float: "left", background:"#ffff"}}
-                           content={icon.title}>
-                        <img className={styles.iconMap} src={icon.url} />
-                        </Tooltip>
-                      )
-                    })
+                      </div>
+                      :
+                      <>
+                      </>
                   }
 
+                </div>
+
+
+              </div>
+              <div className={styles.center}> </div>
+              {this.state.selection?
+                <>
+
+              <div className={styles.right}>
+                      <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
+                  <h1 className={styles.begin}>{this.state.title}</h1>
+                  <div>
+                    <p className={styles.description}>{this.state.description}</p>
+                      </div>
                   </div>
+                  </>
+                :
+                <>
+
+              <div className={styles.right}>
+                  <h1 className={styles.Click}>Cliquez sur un point pour partir à la rencontre d'un peuple</h1>
+
+                  </div>
+                  </>
+            }
 
             </div>
 
 
-          </div>
-          <div className={styles.center}> </div>
-          <div className={styles.right}>
-                  <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
-              <h1 className={styles.begin}>{this.state.title}</h1>
-              <div>
-                <p className={styles.description}>{this.state.description}</p>
-              </div>
+
+          </>
 
 
-        </div>
-        </div>
-
-
-      </>
-
-
-    }
+        }
 
 
 
-  </section>
-</article>
-</Layout>
+      </section>
+    </article>
+    </Layout>
 );
 }
 }

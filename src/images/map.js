@@ -157,7 +157,7 @@ function Icon(props) {
          onClick={props.click}
        cx="87.535"
        cy="37.67"
-       fill="#F73A60"
+      fill="#5D4DE1"
        rx="3.114"
        ry="3.027"
        transform="matrix(1.06824 0 0 1.05849 23.096 -31.56)"

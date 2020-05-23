@@ -34,7 +34,8 @@ class Home extends Component {
       title:data.team[0].id,
       icon:data.team[0].icon,
       pass:"inherit",
-      tel:"none"
+      tel:"none",
+      selection:false,
     }
 
   }
@@ -60,9 +61,8 @@ class Home extends Component {
 
 
   handleClick(e){
+    this.setState({selection:true})
     this.setState({color:"#5D4DE1"})
-
-
     const ellipse = document.getElementsByClassName("point");
     const point = e.target.id;
 const targt = e.target.getAttribute("value");
@@ -126,6 +126,8 @@ render() {
 
                 <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
 
+              {this.state.selection?
+                <>
                 <div className={styles.pbMobileContainer}>
                 <h1 className={styles.pbMobile}>Problématiques</h1>
                 {
@@ -143,8 +145,13 @@ render() {
 
                 </div>
                 <img className={styles.next} src={next} onClick={this.handleNext.bind(this)}/>
-              </div>
 
+              </>
+              :
+              <div className={styles.ClickMobile}>Cliquez sur un point pour partir à la rencontre d'un peuple</div>
+
+              }
+              </div>
               <div className={styles.infoMobile} style={{display:this.state.tel}}>
                 <h1 className={styles.begin}>{this.state.title}</h1>
                 <p className={styles.description}>{this.state.description}</p>
@@ -174,7 +181,7 @@ render() {
               <div id="map">
 
                   <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
-
+                  {this.state.selection?
                   <div className={styles.pbcontainer}>
                   <h1 className={styles.pb}>Problématiques</h1>
                   {
@@ -191,21 +198,37 @@ render() {
                   }
 
                   </div>
+                  :
+                  <>
+                  </>
+              }
 
             </div>
 
 
           </div>
           <div className={styles.center}> </div>
+          {this.state.selection?
+            <>
+
           <div className={styles.right}>
                   <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
               <h1 className={styles.begin}>{this.state.title}</h1>
               <div>
                 <p className={styles.description}>{this.state.description}</p>
+                  </div>
               </div>
+              </>
+            :
+            <>
 
+          <div className={styles.right}>
+              <h1 className={styles.Click}>Cliquez sur un point pour partir à la rencontre d'un peuple</h1>
 
-        </div>
+              </div>
+              </>
+        }
+
         </div>
 
       :
