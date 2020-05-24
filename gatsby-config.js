@@ -29,6 +29,7 @@ module.exports = {
     author: `Adrien Blanchot`,
   },
   plugins: [
+  'gatsby-plugin-remove-console',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
