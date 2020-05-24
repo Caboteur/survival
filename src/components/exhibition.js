@@ -138,41 +138,15 @@ this.getData();
           x1 = x1 + 700;
           x2 = x2 + 700;
 
-
+console.log(end);
           if(index === end ){
-            let ctrans = 'rotateY(90deg) translateX(0px) translateY(0px) translateZ('+z1+'px)';
+            console.log(index);
+            let ctrans = 'translateX('+x2+'px) translateY(0px) translateZ(350px)';
             let css = {
              transform: ctrans
             }
-            let ctrans2 = 'translateX('+x1+'px) translateY(0px) translateZ(-350px)';
-            let css2 = {
-             transform: ctrans2
-            }
-            let ctrans3 = 'rotateY(90deg) translateX(0px) translateY(0px) translateZ('+z2+'px)';
-            let css3= {
-             transform: ctrans3
-           }
-            if (calc < 0){
-
-
-           return (
-            <>
-            <div id="side4" style={css}> </div>
-            <div id="side7" style={css2}>
-
-             </div>
-
-             <div id="side8" style={css3}>  </div>
-            </>
-        )
-      }else{
-        return (
-         <>
-         <div id="side4" style={css}> </div>
-         </>
-     )
-
-      }
+            return   (<div id="side9" style={css}></div>
+)
         }
 
           else if(index === 0 || index % 3 === 0 ){
