@@ -34,6 +34,7 @@ class Carte extends Component {
       title:data.team[0].id,
       icon:data.team[0].icon,
       pass:"inherit",
+      check:"none",
       tel:"none",
       selection:false,
     }
@@ -48,15 +49,17 @@ class Carte extends Component {
   checkMobil(){
     if(isTablet){
       this.setState({overflow:"hidden"})
+      this.setState({check:"inherit"})
       }
     else if(isMobile){
       this.setState({mobile:true})
       this.setState({overflow:"auto"})
+      this.setState({check:"inherit"})
     }
     else{
       this.setState({overflow:"hidden"})
+      this.setState({check:"inherit"})
     }
-
   }
 
 
@@ -102,6 +105,7 @@ render() {
 
   return (
 
+      <div style={{display:this.state.check}}>
 
         <Layout>
 
@@ -240,6 +244,8 @@ render() {
       </section>
     </article>
     </Layout>
+
+  </div>
 );
 }
 }
