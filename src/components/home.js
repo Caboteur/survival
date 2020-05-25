@@ -155,7 +155,7 @@ render() {
               <div className={styles.infoMobile} style={{display:this.state.tel}}>
                 <h1 className={styles.begin}>{this.state.title}</h1>
                 <p className={styles.description}>{this.state.description}</p>
-                  <img className={styles.followMobile} src={back} onClick={this.handleNext.bind(this)}/>
+                  <img style={{width: "128px"}} className={styles.followMobile} src={back} onClick={this.handleNext.bind(this)}/>
                 <Link to="/exposition/"><img className={styles.followMobile} src={follow} /></Link>
 
             </div>
