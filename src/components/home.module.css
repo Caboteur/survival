@@ -516,6 +516,9 @@ a:-webkit-any-link{
   width: 3em;
   float: left;
   margin-right: 20px;
+  animation-duration: 2s;
+  animation-name: opaq;
+  animation-fill-mode: forwards;
 }
 
 
@@ -631,11 +634,12 @@ width: 7rem;
 
 .Click{
   white-space: initial;
-font-size: 23px;
+font-size: 19px;
 font-family: 'Megrim', sans-serif;
 color: #7b95dc;
 padding: 20px;
-text-align: center;
+text-align: left;
+float: left;
 }
 
 .ClickMobile{

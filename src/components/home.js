@@ -200,10 +200,11 @@ render() {
                       )
                     })
                   }
-
                   </div>
                   :
                   <>
+                  <h1 className={styles.Click}>Cliquez sur un point <br></br> pour partir à la rencontre d'un peuple</h1>
+
                   </>
               }
 
@@ -226,8 +227,7 @@ render() {
             :
             <>
 
-          <div className={styles.right}>
-              <h1 className={styles.Click}>Cliquez sur un point pour partir à la rencontre d'un peuple</h1>
+          <div style={{background:"#e6e6e6"}} className={styles.right}>
 
               </div>
               </>

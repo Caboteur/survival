@@ -179,56 +179,56 @@ render() {
                       <img onClick={() => window.location.reload(false)} className={styles.logo} src={title} />
                   <SocialComponent />
 
-                  <div id="map">
+                    <div id="map">
 
-                      <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
-                      {this.state.selection?
-                      <div className={styles.pbcontainer}>
-                      <h1 className={styles.pb}>Problématiques</h1>
-                      {
-                        this.state.icon.map((icon)=>{
+                        <Map class={styles.mapSvg} click={this.handleClick.bind(this)}/>
+                        {this.state.selection?
+                        <div className={styles.pbcontainer}>
+                        <h1 className={styles.pb}>Problématiques</h1>
+                        {
+                          this.state.icon.map((icon)=>{
 
-                          return(
-                             <Tooltip
-                               style={{display:"block",float: "left", background:"#ffff"}}
-                               content={icon.title}>
-                            <img className={styles.iconMap} src={icon.url} />
-                            </Tooltip>
-                          )
-                        })
-                      }
+                            return(
+                               <Tooltip
+                                 style={{display:"block",float: "left", background:"#ffff"}}
+                                 content={icon.title}>
+                              <img className={styles.iconMap} src={icon.url} />
+                              </Tooltip>
+                            )
+                          })
+                        }
+                        </div>
+                        :
+                        <>
+                        <h1 className={styles.Click}>Cliquez sur un point <br></br> pour partir à la rencontre d'un peuple</h1>
 
-                      </div>
-                      :
-                      <>
-                      </>
-                  }
+                        </>
+                    }
+
+                  </div>
+
 
                 </div>
+                <div className={styles.center}> </div>
+                {this.state.selection?
+                  <>
 
+                <div className={styles.right}>
+                        <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
+                    <h1 className={styles.begin}>{this.state.title}</h1>
+                    <div>
+                      <p className={styles.description}>{this.state.description}</p>
+                        </div>
+                    </div>
+                    </>
+                  :
+                  <>
 
-              </div>
-              <div className={styles.center}> </div>
-              {this.state.selection?
-                <>
+                <div style={{background:"#e6e6e6"}} className={styles.right}>
 
-              <div className={styles.right}>
-                      <Link to="/exposition/"><img className={styles.follow} src={follow} /></Link>
-                  <h1 className={styles.begin}>{this.state.title}</h1>
-                  <div>
-                    <p className={styles.description}>{this.state.description}</p>
-                      </div>
-                  </div>
-                  </>
-                :
-                <>
-
-              <div className={styles.right}>
-                  <h1 className={styles.Click}>Cliquez sur un point pour partir à la rencontre d'un peuple</h1>
-
-                  </div>
-                  </>
-            }
+                    </div>
+                    </>
+              }
 
             </div>
 
