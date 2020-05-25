@@ -188,6 +188,11 @@ img{
   white-space: initial;
 }
 
+.description{
+  max-width: 450px;
+  margin: auto;
+}
+
 @media only screen and (max-width : 920px)
 {
 
@@ -226,8 +231,7 @@ img{
       margin-left: 10%;
       margin-right: 10%;
       white-space: pre-line;
-      max-width: 450px;
-      margin: auto;
+
   }
 
   .begin a{
