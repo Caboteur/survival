@@ -16,15 +16,6 @@ function SEO() {
 
     <Helmet>
       <meta charSet="utf-8"  />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161763631-2"></script>
-         <script>
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-
-           gtag('config', 'UA-161763631-2');
-         </script>
-
            <title>Luttes autochtones de Colombie</title>
            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
            <link rel="icon" href="https://images.ctfassets.net/s8p26a84thqj/7E0zzHFT51dNsdeC8HuKFF/31e571f9cbff8a57627b450a7687ca50/iconsite.png?h=250" />

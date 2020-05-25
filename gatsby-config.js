@@ -29,6 +29,13 @@ module.exports = {
     author: `Adrien Blanchot`,
   },
   plugins: [
+    {
+     resolve: `gatsby-plugin-google-analytics`,
+     options: {
+       // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+       trackingId: "UA-161763631-2",
+     },
+   },
   'gatsby-plugin-remove-console',
     `gatsby-plugin-react-helmet`,
     {
