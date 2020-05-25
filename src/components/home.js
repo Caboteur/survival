@@ -35,7 +35,7 @@ class Home extends Component {
       icon:data.team[0].icon,
       pass:"inherit",
       tel:"none",
-      check:"none"
+      check:"none",
       selection:false,
     }
 
