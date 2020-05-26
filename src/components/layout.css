@@ -47,6 +47,7 @@ body{
   }
 
   .items {
+
     position: relative;
     white-space: nowrap;
     -webkit-transform: scale(0.98);
@@ -54,7 +55,7 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: pointer;
+    cursor: move;
     overflow: hidden;
     height: 100vh;
     perspective: 5472px;
