@@ -170,6 +170,7 @@ body{
 }
 
 .exibitPicture{
+  cursor: pointer;
   max-width: 1500px;
  box-shadow: 6px 6px 7px #00000078;
 }
